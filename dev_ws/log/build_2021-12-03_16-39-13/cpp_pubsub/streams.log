@@ -1,0 +1,32 @@
+[0.043s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.122s] [35m[1mScanning dependencies of target listener[0m
+[0.167s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[3.664s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[3.664s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:36:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.665s]    36 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+[3.665s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.059s] [ 50%] [32m[1mLinking CXX executable listener[0m
+[12.599s] [ 50%] Built target listener
+[12.640s] [100%] Built target talker
+[12.660s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[12.723s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_pubsub
+[12.739s] -- Install configuration: ""
+[12.740s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[12.741s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[12.746s] -- Set runtime path of "/home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[12.746s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[12.747s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[12.748s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[12.748s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[12.748s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[12.749s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[12.749s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[12.749s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[12.750s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[12.750s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[12.750s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[12.751s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[12.751s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[12.751s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[12.752s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[12.756s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_pubsub

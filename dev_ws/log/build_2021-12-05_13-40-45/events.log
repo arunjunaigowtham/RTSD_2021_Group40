@@ -1,0 +1,637 @@
+[0.000000] (-) TimerEvent: {}
+[0.000302] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.000353] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000390] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000429] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.000469] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.043014] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.044366] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.046092] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtsd-user/dev_ws/build/cpp_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/rtsd-user/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtsd-user'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1200'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/rtsd-user'), ('OLDPWD', '/home/rtsd-user/dev_ws/src/cpp_pubsub'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '978'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rtsd-user/dev_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'rtsd-user'), ('JOURNAL_STREAM', '8:31153'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtsd-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtsd-vm:@/tmp/.ICE-unix/1247,unix/rtsd-vm:/tmp/.ICE-unix/1247'), ('INVOCATION_ID', 'ff800d02ba8141d5bfd5999702876240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/259ce066_adc4_42e1_a323_c116a13ce52a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtsd-user/dev_ws/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic')]), 'shell': False}
+[0.095595] (-) TimerEvent: {}
+[0.149678] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.196544] (-) TimerEvent: {}
+[0.237020] (cpp_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.297532] (-) TimerEvent: {}
+[0.398133] (-) TimerEvent: {}
+[0.498662] (-) TimerEvent: {}
+[0.599143] (-) TimerEvent: {}
+[0.701499] (-) TimerEvent: {}
+[0.802091] (-) TimerEvent: {}
+[0.902650] (-) TimerEvent: {}
+[1.003153] (-) TimerEvent: {}
+[1.104231] (-) TimerEvent: {}
+[1.205254] (-) TimerEvent: {}
+[1.306735] (-) TimerEvent: {}
+[1.407242] (-) TimerEvent: {}
+[1.507808] (-) TimerEvent: {}
+[1.609290] (-) TimerEvent: {}
+[1.709779] (-) TimerEvent: {}
+[1.810365] (-) TimerEvent: {}
+[1.910933] (-) TimerEvent: {}
+[2.011438] (-) TimerEvent: {}
+[2.111935] (-) TimerEvent: {}
+[2.212566] (-) TimerEvent: {}
+[2.313023] (-) TimerEvent: {}
+[2.413508] (-) TimerEvent: {}
+[2.513995] (-) TimerEvent: {}
+[2.614635] (-) TimerEvent: {}
+[2.715141] (-) TimerEvent: {}
+[2.815743] (-) TimerEvent: {}
+[2.917201] (-) TimerEvent: {}
+[3.017726] (-) TimerEvent: {}
+[3.118227] (-) TimerEvent: {}
+[3.218753] (-) TimerEvent: {}
+[3.320740] (-) TimerEvent: {}
+[3.421279] (-) TimerEvent: {}
+[3.521760] (-) TimerEvent: {}
+[3.622271] (-) TimerEvent: {}
+[3.723915] (-) TimerEvent: {}
+[3.824349] (-) TimerEvent: {}
+[3.925261] (-) TimerEvent: {}
+[4.025952] (-) TimerEvent: {}
+[4.131423] (-) TimerEvent: {}
+[4.231859] (-) TimerEvent: {}
+[4.332418] (-) TimerEvent: {}
+[4.432936] (-) TimerEvent: {}
+[4.533452] (-) TimerEvent: {}
+[4.634008] (-) TimerEvent: {}
+[4.734517] (-) TimerEvent: {}
+[4.835090] (-) TimerEvent: {}
+[4.935608] (-) TimerEvent: {}
+[5.036113] (-) TimerEvent: {}
+[5.136692] (-) TimerEvent: {}
+[5.238244] (-) TimerEvent: {}
+[5.338686] (-) TimerEvent: {}
+[5.439301] (-) TimerEvent: {}
+[5.539825] (-) TimerEvent: {}
+[5.640311] (-) TimerEvent: {}
+[5.712036] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.712370] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimage_encodings\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::image_encodings\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.712793] (cpp_pubsub) StderrLine: {'line': b'  172 |    img_bridge = cv_bridge::CvImage(header, sensor_msgs::msg::\x1b[01;31m\x1b[Kimage_encodings\x1b[m\x1b[K::bgr8, cvImg);\n'}
+[5.713003] (cpp_pubsub) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.713177] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[5.713484] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:42\x1b[m\x1b[K,\n'}
+[5.713681] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.713867] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/sensor_msgs/image_encodings.hpp:45:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::image_encodings\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.714054] (cpp_pubsub) StderrLine: {'line': b'   45 | namespace \x1b[01;36m\x1b[Kimage_encodings\x1b[m\x1b[K\n'}
+[5.714230] (cpp_pubsub) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.714637] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:173:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv_bridge::CvImage::toImageMsg(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.714858] (cpp_pubsub) StderrLine: {'line': b'  173 |     img_bridge.toImageMsg(cvImg\x1b[01;31m\x1b[K)\x1b[m\x1b[K; // from cv_bridge to sensor_msgs::Image\n'}
+[5.715041] (cpp_pubsub) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.715302] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.715554] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:110:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr cv_bridge::CvImage::toImageMsg() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.715743] (cpp_pubsub) StderrLine: {'line': b'  110 |   sensor_msgs::msg::Image::SharedPtr \x1b[01;36m\x1b[KtoImageMsg\x1b[m\x1b[K() const;\n'}
+[5.715968] (cpp_pubsub) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.716180] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:110:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[5.716554] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.716760] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:129:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid cv_bridge::CvImage::toImageMsg(sensor_msgs::msg::Image&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.716940] (cpp_pubsub) StderrLine: {'line': b'  129 |   void \x1b[01;36m\x1b[KtoImageMsg\x1b[m\x1b[K(sensor_msgs::msg::Image & ros_image) const;\n'}
+[5.717114] (cpp_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.717383] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:129:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.717819] (cpp_pubsub) StderrLine: {'line': b'  129 |   void toImageMsg(\x1b[01;36m\x1b[Ksensor_msgs::msg::Image & ros_image\x1b[m\x1b[K) const;\n'}
+[5.717973] (cpp_pubsub) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.718829] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator*\x1b[m\x1b[K\xe2\x80\x99 (operand type is \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.719005] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(\x1b[01;31m\x1b[K*cvImg\x1b[m\x1b[K);\n'}
+[5.719128] (cpp_pubsub) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.719268] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.719417] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.719535] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.719651] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.719766] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1237:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.719891] (cpp_pubsub) StderrLine: {'line': b' 1237 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, n>& a, int alpha)\n'}
+[5.720054] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.720182] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1237:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.724442] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.724613] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.724737] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.725003] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.725164] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.725288] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.725403] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.725548] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1243:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.725665] (cpp_pubsub) StderrLine: {'line': b' 1243 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, n>& a, float alpha)\n'}
+[5.725780] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.725894] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1243:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.726022] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.732446] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.732604] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.732728] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.732847] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.733002] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.733123] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.733240] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1249:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.733359] (cpp_pubsub) StderrLine: {'line': b' 1249 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, n>& a, double alpha)\n'}
+[5.733476] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.733593] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1249:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.733709] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.733828] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.739605] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.739820] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.739951] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.740104] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.740235] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.740359] (-) TimerEvent: {}
+[5.741595] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1255:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(int, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.741845] (cpp_pubsub) StderrLine: {'line': b' 1255 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (int alpha, const Matx<_Tp, m, n>& a)\n'}
+[5.741973] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.742092] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1255:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.742224] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.742342] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.742464] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.742580] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.742735] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.742856] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.742973] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.743089] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1261:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(float, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.743206] (cpp_pubsub) StderrLine: {'line': b' 1261 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (float alpha, const Matx<_Tp, m, n>& a)\n'}
+[5.743321] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.743435] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1261:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.743551] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.745769] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.745986] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.746115] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.746235] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.746352] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.746469] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.746615] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1267:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(double, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.746749] (cpp_pubsub) StderrLine: {'line': b' 1267 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double alpha, const Matx<_Tp, m, n>& a)\n'}
+[5.746866] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.746981] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1267:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.747097] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.747226] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.747341] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.747456] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.749679] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.749898] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.750023] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.750142] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1279:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n, int l> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, l>&, const cv::Matx<_Tp, l, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.750273] (cpp_pubsub) StderrLine: {'line': b' 1279 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, l>& a, const Matx<_Tp, l, n>& b)\n'}
+[5.750392] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.750546] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1279:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.750669] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, l>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.750795] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.750910] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.751025] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.751140] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.751255] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.751370] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.753645] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1285:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Vec<_Tp, m> cv::operator*(const cv::Matx<_Tp, m, n>&, const cv::Vec<_Tp, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.753868] (cpp_pubsub) StderrLine: {'line': b' 1285 | Vec<_Tp, m> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, n>& a, const Vec<_Tp, n>& b)\n'}
+[5.754001] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.754119] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1285:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.754237] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.754355] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.754530] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.754649] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.754764] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.754879] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.754993] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.755108] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1392:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.755224] (cpp_pubsub) StderrLine: {'line': b' 1392 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Vec<_Tp, cn>& a, int alpha)\n'}
+[5.755339] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.757656] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1392:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.757808] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.757932] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.758051] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.758167] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.758305] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.758445] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.758560] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.758675] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1398:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(int, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.758791] (cpp_pubsub) StderrLine: {'line': b' 1398 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (int alpha, const Vec<_Tp, cn>& a)\n'}
+[5.758905] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.759018] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1398:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.759146] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.759287] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.761605] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.761754] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.761874] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.761992] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.762108] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.762272] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1404:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.762397] (cpp_pubsub) StderrLine: {'line': b' 1404 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Vec<_Tp, cn>& a, float alpha)\n'}
+[5.762512] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.762626] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1404:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.762741] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.762857] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.762980] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.763095] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.765426] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.765587] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.765711] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.765829] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1410:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(float, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.765946] (cpp_pubsub) StderrLine: {'line': b' 1410 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (float alpha, const Vec<_Tp, cn>& a)\n'}
+[5.766061] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.766220] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1410:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.766339] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.766454] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.766568] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.766681] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.766795] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.766921] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.767035] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.778127] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1416:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.778288] (cpp_pubsub) StderrLine: {'line': b' 1416 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Vec<_Tp, cn>& a, double alpha)\n'}
+[5.778412] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.778528] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1416:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.778645] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.778866] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.778995] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.779124] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.779241] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.779355] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.779474] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.779589] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1422:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(double, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.779705] (cpp_pubsub) StderrLine: {'line': b' 1422 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double alpha, const Vec<_Tp, cn>& a)\n'}
+[5.785934] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.786090] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1422:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.786213] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.786332] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.786447] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.786596] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[5.786739] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.786855] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.786970] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.787099] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1453:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Vec<_Tp, 4> cv::operator*(const cv::Vec<_Tp, 4>&, const cv::Vec<_Tp, 4>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.787217] (cpp_pubsub) StderrLine: {'line': b' 1453 | template<typename _Tp> inline Vec<_Tp, 4> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Vec<_Tp, 4>& v1, const Vec<_Tp, 4>& v2)\n'}
+[5.787338] (cpp_pubsub) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.787457] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1453:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.788641] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, 4>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.788851] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.788978] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.789096] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.789212] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.789346] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.789467] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.790834] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1057:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.790979] (cpp_pubsub) StderrLine: {'line': b' 1057 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Complex<_Tp>& a, const Complex<_Tp>& b)\n'}
+[5.791100] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.791216] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1057:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.791333] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.791453] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.791614] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.791732] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.791846] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.791961] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.792088] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.792256] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1063:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(const cv::Complex<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.792393] (cpp_pubsub) StderrLine: {'line': b' 1063 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Complex<_Tp>& a, _Tp b)\n'}
+[5.794667] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.794817] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1063:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.794940] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.795060] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.795175] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.795290] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.795444] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.795568] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.795682] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.795797] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1069:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(_Tp, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.795914] (cpp_pubsub) StderrLine: {'line': b' 1069 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (_Tp b, const Complex<_Tp>& a)\n'}
+[5.796029] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.796143] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1069:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.798530] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.798705] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.798828] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.798946] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.799076] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.799200] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.799357] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.799479] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1335:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.799605] (cpp_pubsub) StderrLine: {'line': b' 1335 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point_<_Tp>& a, int b)\n'}
+[5.799719] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.799833] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1335:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.799949] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.800064] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.801333] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.801587] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.801714] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.801833] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.801949] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.802064] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1341:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(int, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.802195] (cpp_pubsub) StderrLine: {'line': b' 1341 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (int a, const Point_<_Tp>& b)\n'}
+[5.805695] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.805920] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1341:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.806066] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.806390] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.806540] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.806663] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.806991] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.807169] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.807292] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.807409] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1347:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.807527] (cpp_pubsub) StderrLine: {'line': b' 1347 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point_<_Tp>& a, float b)\n'}
+[5.807659] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.807773] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1347:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.807888] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.808003] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.810315] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.810472] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.810594] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.810711] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.810827] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.810941] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1353:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(float, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.811105] (cpp_pubsub) StderrLine: {'line': b' 1353 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (float a, const Point_<_Tp>& b)\n'}
+[5.811223] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.811350] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1353:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.811465] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.811586] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.811700] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.811814] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.811927] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.816204] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.816448] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.816572] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1359:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.816692] (cpp_pubsub) StderrLine: {'line': b' 1359 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point_<_Tp>& a, double b)\n'}
+[5.816808] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.816962] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1359:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.817093] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.817215] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.817331] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.817444] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.817558] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.817672] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.817786] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.820104] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1365:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(double, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.820306] (cpp_pubsub) StderrLine: {'line': b' 1365 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double a, const Point_<_Tp>& b)\n'}
+[5.820438] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.820555] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1365:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.820671] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.820822] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.820940] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.821054] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.821168] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.821282] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.821395] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.821509] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1371:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Matx<_Tp, 2, 2>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.821625] (cpp_pubsub) StderrLine: {'line': b' 1371 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, 2, 2>& a, const Point_<_Tp>& b)\n'}
+[5.823902] (cpp_pubsub) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.824115] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1371:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.824292] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, 2, 2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.824451] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.824568] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.824726] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.824845] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.824958] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.825080] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.825194] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1378:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Matx<_Tp, 3, 3>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.825316] (cpp_pubsub) StderrLine: {'line': b' 1378 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, 3, 3>& a, const Point_<_Tp>& b)\n'}
+[5.825429] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.825543] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1378:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.827839] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, 3, 3>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.828028] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.828152] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.828334] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.828471] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.828624] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.828742] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.828857] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1604:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.828978] (cpp_pubsub) StderrLine: {'line': b' 1604 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point3_<_Tp>& a, int b)\n'}
+[5.829092] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.829205] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1604:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.829318] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.836136] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.836331] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.836564] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.836683] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.836799] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.836913] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.837028] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1610:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(int, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.837146] (cpp_pubsub) StderrLine: {'line': b' 1610 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (int a, const Point3_<_Tp>& b)\n'}
+[5.837262] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.837495] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1610:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.837616] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.837731] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.837844] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.837957] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.838072] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.838185] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.838331] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.838461] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1616:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.838576] (cpp_pubsub) StderrLine: {'line': b' 1616 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point3_<_Tp>& a, float b)\n'}
+[5.838689] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.838802] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1616:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.838915] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.839050] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.839245] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.839398] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.839515] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.839630] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.839744] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.839858] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1622:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(float, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.839981] (cpp_pubsub) StderrLine: {'line': b' 1622 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (float a, const Point3_<_Tp>& b)\n'}
+[5.840096] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.840213] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1622:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.840452] (-) TimerEvent: {}
+[5.840702] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.840836] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.840952] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.841066] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.841181] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.841350] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.841468] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.841581] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1628:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.841696] (cpp_pubsub) StderrLine: {'line': b' 1628 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Point3_<_Tp>& a, double b)\n'}
+[5.841810] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.841922] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1628:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.842036] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.842152] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.842300] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.842416] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.842541] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.842655] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.842768] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.842881] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1634:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(double, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.842996] (cpp_pubsub) StderrLine: {'line': b' 1634 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double a, const Point3_<_Tp>& b)\n'}
+[5.843111] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.843270] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1634:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.843387] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.843501] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.843615] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.843728] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.843840] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.843954] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.844067] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.844227] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1640:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Matx<_Tp, 3, 3>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.844365] (cpp_pubsub) StderrLine: {'line': b' 1640 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, 3, 3>& a, const Point3_<_Tp>& b)\n'}
+[5.844481] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.844594] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1640:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.844714] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, 3, 3>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.844830] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.844943] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.845056] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.849266] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.849437] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.849558] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.849675] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1647:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Matx<T2, 4, 1> cv::operator*(const cv::Matx<_Tp, 4, 4>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.849792] (cpp_pubsub) StderrLine: {'line': b' 1647 | Matx<_Tp, 4, 1> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, 4, 4>& a, const Point3_<_Tp>& b)\n'}
+[5.849907] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.850059] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1647:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.850189] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, 4, 4>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.850305] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.850418] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.850530] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.850643] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.850756] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.850869] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.851004] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1751:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Size_<_Tp> cv::operator*(const cv::Size_<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.851133] (cpp_pubsub) StderrLine: {'line': b' 1751 | Size_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Size_<_Tp>& a, _Tp b)\n'}
+[5.851246] (cpp_pubsub) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.851360] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1751:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.851473] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.851588] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.851701] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.851813] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.851926] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.852088] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.852214] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.852328] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2318:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(const cv::Scalar_<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.852442] (cpp_pubsub) StderrLine: {'line': b' 2318 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Scalar_<_Tp>& a, _Tp alpha)\n'}
+[5.852555] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.852668] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2318:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.852781] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.852909] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.859236] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.859384] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.859507] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.859623] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.859738] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.868997] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2327:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(_Tp, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.869173] (cpp_pubsub) StderrLine: {'line': b' 2327 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (_Tp alpha, const Scalar_<_Tp>& a)\n'}
+[5.869295] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.869411] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2327:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.869527] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.869677] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.869795] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.869951] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.870072] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.870187] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.870302] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.870439] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2343:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.874681] (cpp_pubsub) StderrLine: {'line': b' 2343 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)\n'}
+[5.874872] (cpp_pubsub) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.874996] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2343:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.875115] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.875670] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.875830] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.875948] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.876064] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.876219] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.876359] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.878245] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2409:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar cv::operator*(const cv::Matx<_Tp, 4, 4>&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.879716] (cpp_pubsub) StderrLine: {'line': b' 2409 | Scalar \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, 4, 4>& a, const Scalar& b)\n'}
+[5.879873] (cpp_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.879993] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2409:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.880110] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, 4, 4>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.880313] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.880447] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.880561] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[5.880674] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.880800] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.880915] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.881029] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3586:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.881155] (cpp_pubsub) StderrLine: {'line': b' 3586 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Mat& a, const Mat& b);\n'}
+[5.881297] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.881422] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3586:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.881536] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3587:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::Mat&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.881651] (cpp_pubsub) StderrLine: {'line': b' 3587 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Mat& a, double s);\n'}
+[5.881764] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.881876] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3587:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.881989] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3588:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(double, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.882102] (cpp_pubsub) StderrLine: {'line': b' 3588 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double s, const Mat& a);\n'}
+[5.882215] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.882363] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3588:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.882479] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3589:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::MatExpr&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.882593] (cpp_pubsub) StderrLine: {'line': b' 3589 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const MatExpr& e, const Mat& m);\n'}
+[5.882705] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.882817] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3589:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.882930] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3590:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.883043] (cpp_pubsub) StderrLine: {'line': b' 3590 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Mat& m, const MatExpr& e);\n'}
+[5.883155] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.883299] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3590:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.883416] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3591:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::MatExpr&, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.883530] (cpp_pubsub) StderrLine: {'line': b' 3591 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const MatExpr& e, double s);\n'}
+[5.883651] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.883763] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3591:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.883875] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3592:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(double, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.883988] (cpp_pubsub) StderrLine: {'line': b' 3592 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (double s, const MatExpr& e);\n'}
+[5.884101] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.888371] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3592:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.888585] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3593:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator*(const cv::MatExpr&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.888711] (cpp_pubsub) StderrLine: {'line': b' 3593 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const MatExpr& e1, const MatExpr& e2);\n'}
+[5.888828] (cpp_pubsub) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.888942] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3593:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.889086] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3595:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator*(const cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.889322] (cpp_pubsub) StderrLine: {'line': b' 3595 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Mat& a, const Matx<_Tp, m, n>& b) { return a * Mat(b); }\n'}
+[5.889443] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.889559] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3595:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.889690] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[5.889826] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.893296] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.893440] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[5.893560] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.893677] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.893791] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27\x1b[m\x1b[K:\n'}
+[5.893906] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator*(const cv::Matx<_Tp, m, n>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.896265] (cpp_pubsub) StderrLine: {'line': b' 3597 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K * (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) * b; }\n'}
+[5.896429] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.896549] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.896665] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.896782] (cpp_pubsub) StderrLine: {'line': b'  175 |     publisher_->publish(*\x1b[01;36m\x1b[KcvImg\x1b[m\x1b[K);\n'}
+[5.896976] (cpp_pubsub) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.897099] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:145:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Krows\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[5.897216] (cpp_pubsub) StderrLine: {'line': b'  145 |     int \x1b[01;35m\x1b[Krows\x1b[m\x1b[K = msg->height;\n'}
+[5.897328] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.897441] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:146:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcolumns\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[5.897555] (cpp_pubsub) StderrLine: {'line': b'  146 |     int \x1b[01;35m\x1b[Kcolumns\x1b[m\x1b[K = msg->width;\n'}
+[5.897668] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.949326] (-) TimerEvent: {}
+[6.051186] (-) TimerEvent: {}
+[6.151813] (-) TimerEvent: {}
+[6.252324] (-) TimerEvent: {}
+[6.353363] (-) TimerEvent: {}
+[6.453810] (-) TimerEvent: {}
+[6.554302] (-) TimerEvent: {}
+[6.655394] (-) TimerEvent: {}
+[6.756049] (-) TimerEvent: {}
+[6.856583] (-) TimerEvent: {}
+[6.957057] (-) TimerEvent: {}
+[7.057571] (-) TimerEvent: {}
+[7.158363] (-) TimerEvent: {}
+[7.258872] (-) TimerEvent: {}
+[7.359389] (-) TimerEvent: {}
+[7.459883] (-) TimerEvent: {}
+[7.562029] (-) TimerEvent: {}
+[7.662534] (-) TimerEvent: {}
+[7.763142] (-) TimerEvent: {}
+[7.864916] (-) TimerEvent: {}
+[7.965448] (-) TimerEvent: {}
+[8.066637] (-) TimerEvent: {}
+[8.171537] (-) TimerEvent: {}
+[8.272587] (-) TimerEvent: {}
+[8.373061] (-) TimerEvent: {}
+[8.473677] (-) TimerEvent: {}
+[8.574206] (-) TimerEvent: {}
+[8.675748] (-) TimerEvent: {}
+[8.776272] (-) TimerEvent: {}
+[8.876707] (-) TimerEvent: {}
+[8.977296] (-) TimerEvent: {}
+[9.077779] (-) TimerEvent: {}
+[9.178369] (-) TimerEvent: {}
+[9.278949] (-) TimerEvent: {}
+[9.381049] (-) TimerEvent: {}
+[9.481956] (-) TimerEvent: {}
+[9.582387] (-) TimerEvent: {}
+[9.682970] (-) TimerEvent: {}
+[9.784670] (-) TimerEvent: {}
+[9.885125] (-) TimerEvent: {}
+[9.985691] (-) TimerEvent: {}
+[10.086167] (-) TimerEvent: {}
+[10.186683] (-) TimerEvent: {}
+[10.287149] (-) TimerEvent: {}
+[10.290216] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[10.291055] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2\n'}
+[10.292323] (cpp_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[10.296416] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[10.382250] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[10.405350] (-) TimerEvent: {}
+[10.405515] (-) EventReactorShutdown: {}

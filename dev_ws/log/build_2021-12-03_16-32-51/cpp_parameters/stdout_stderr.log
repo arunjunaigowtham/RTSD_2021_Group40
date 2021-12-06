@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target parameter_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o[0m
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:[m[K In member function ‘[01m[Kvoid ParametersClass::respond()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:28:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   28 |       message.data = "Hello %s", parameter_string_.c_str()[01;31m[K)[m[K;
+      |                                                           [01;31m[K^[m[K
+      |                                                           [32m[K;[m[K
+make[2]: *** [CMakeFiles/parameter_node.dir/build.make:63: CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/parameter_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

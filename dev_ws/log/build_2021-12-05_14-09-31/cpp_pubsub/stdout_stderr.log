@@ -1,0 +1,29 @@
+[35m[1mScanning dependencies of target listener[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+  175 |     cv::Scalar m = cv::mean([01;31m[Kimg[m[K);
+      |                             [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+  176 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Mean (grayscale) pixel value: %d"[m[K, m[0]);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  176 |     RCLCPP_INFO(this->get_logger(), "Mean (grayscale) pixel value: [01;36m[K%d[m[K", m[0]);
+      |                                                                    [01;36m[K~^[m[K
+      |                                                                     [01;36m[K|[m[K
+      |                                                                     [01;36m[Kint[m[K
+      |                                                                    [32m[K%f[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

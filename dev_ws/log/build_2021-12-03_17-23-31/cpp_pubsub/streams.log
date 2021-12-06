@@ -1,0 +1,29 @@
+[0.039s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.134s] [35m[1mScanning dependencies of target listener[0m
+[0.179s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[3.988s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[3.988s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:44:62:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[3.988s]    44 |     subscription_ = this->create_subscription<std_msgs::msg::[01;31m[KImage[m[K>(
+[3.988s]       |                                                              [01;31m[K^~~~~[m[K
+[4.002s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:45:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<<expression error> >(const char [6], int, std::_Bind_helper<false, void (MinimalSubscriber::*)(std::shared_ptr<const std_msgs::msg::String_<std::allocator<void> > >) const, MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[4.002s]    45 |         "image", 0, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K
+[4.003s]       |                                                                            [01;31m[K^[m[K
+[4.003s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.003s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.003s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.004s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[4.004s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[4.004s]   218 |   [01;36m[Kcreate_subscription[m[K(
+[4.004s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.005s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.005s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:45:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.005s]    45 |         "image", 0, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K
+[4.005s]       |                                                                            [01;31m[K^[m[K
+[4.364s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[4.365s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:49:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.365s]    49 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+[4.365s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.257s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[5.259s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[5.259s] make: *** [Makefile:141: all] Error 2
+[5.264s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

@@ -1,0 +1,12 @@
+[0.035s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_parameters -- -j1 -l1
+[0.121s] [35m[1mScanning dependencies of target parameter_node[0m
+[0.167s] [ 50%] [32mBuilding CXX object CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o[0m
+[3.289s] [01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:[m[K In member function ‘[01m[Kvoid ParametersClass::respond()[m[K’:
+[3.290s] [01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:28:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[3.290s]    28 |       message.data = "Hello %s", parameter_string_.c_str()[01;31m[K)[m[K;
+[3.290s]       |                                                           [01;31m[K^[m[K
+[3.290s]       |                                                           [32m[K;[m[K
+[4.984s] make[2]: *** [CMakeFiles/parameter_node.dir/build.make:63: CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o] Error 1
+[4.991s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/parameter_node.dir/all] Error 2
+[4.991s] make: *** [Makefile:141: all] Error 2
+[4.992s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_parameters' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_parameters -- -j1 -l1

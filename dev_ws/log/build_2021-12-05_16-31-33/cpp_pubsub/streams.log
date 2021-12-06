@@ -1,0 +1,21 @@
+[0.047s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.147s] [35m[1mScanning dependencies of target listener[0m
+[0.210s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[5.362s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[5.362s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Parameter::__ct [m[K’ names the constructor, not the type
+[5.362s]   176 |     [01;31m[Krclcpp[m[K::Parameter::Parameter testParam;
+[5.363s]       |     [01;31m[K^~~~~~[m[K
+[5.363s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KtestParam[m[K’
+[5.363s]   176 |     rclcpp::Parameter::Parameter[01;31m[K [m[K[32m[KtestParam[m[K;
+[5.363s]       |                                 [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+[5.364s]       |                                 [32m[K;[m[K
+[5.364s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:43:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+[5.364s]   176 |     rclcpp::Parameter::Parameter testParam[01;31m[K;[m[K
+[5.364s]       |                                           [01;31m[K^[m[K
+[5.371s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:177:38:[m[K [01;31m[Kerror: [m[K‘[01m[KtestParam[m[K’ was not declared in this scope
+[5.372s]   177 |     this->get_parameter("threshold", [01;31m[KtestParam[m[K);
+[5.372s]       |                                      [01;31m[K^~~~~~~~~[m[K
+[9.886s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[9.888s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[9.888s] make: *** [Makefile:141: all] Error 2
+[9.907s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

@@ -1,0 +1,18 @@
+[0.045s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.149s] [35m[1mScanning dependencies of target listener[0m
+[0.284s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[5.997s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[5.998s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:173:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcv[m[K’
+[5.999s]   173 |     [01;31m[Kcv[m[K::Mat greyMat;
+[5.999s]       |     [01;31m[K^~[m[K
+[6.005s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:174:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgreyMat[m[K’ was not declared in this scope
+[6.005s]   174 |     cv::cvtColor(cvImg, [01;31m[KgreyMat[m[K, CV_BGR2GRAY);
+[6.005s]       |                         [01;31m[K^~~~~~~[m[K
+[6.010s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:27:[m[K [01;31m[Kerror: [m[K‘[01m[KcvImgOut[m[K’ was not declared in this scope; did you mean ‘[01m[KcvImg[m[K’?
+[6.010s]   175 |     cv::cvtColor(greyMat, [01;31m[KcvImgOut[m[K, CV_BGR2GRAY);
+[6.010s]       |                           [01;31m[K^~~~~~~~[m[K
+[6.011s]       |                           [32m[KcvImg[m[K
+[10.559s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[10.562s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[10.562s] make: *** [Makefile:141: all] Error 2
+[10.568s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

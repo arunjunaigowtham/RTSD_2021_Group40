@@ -1,0 +1,24 @@
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::parse_parameters()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:75:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_reliability_policy_t[m[K’?
+   75 |     for (auto entry : [01;31m[Kname_to_reliability_policy_map[m[K) {
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krmw_qos_reliability_policy_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:80:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_reliability_policy_t[m[K’?
+   80 |     auto reliability = [01;31m[Kname_to_reliability_policy_map[m[K.find(reliability_param);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Krmw_qos_reliability_policy_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:92:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_history_policy_t[m[K’?
+   92 |     for (auto entry : [01;31m[Kname_to_history_policy_map[m[K) {
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krmw_qos_history_policy_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:96:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_history_policy_t[m[K’?
+   96 |       "history", [01;31m[Kname_to_history_policy_map[m[K.begin()->first, history_desc);
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                  [32m[Krmw_qos_history_policy_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:112:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  112 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

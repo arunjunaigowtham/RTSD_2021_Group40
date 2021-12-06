@@ -1,0 +1,6 @@
+[0.022s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.171s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[1.519s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Interrupt
+[1.522s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Interrupt
+[1.522s] make: *** [Makefile:141: all] Interrupt
+[1.530s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

@@ -1,0 +1,44 @@
+[0.082s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.273s] [35m[1mScanning dependencies of target listener[0m
+[0.373s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[6.903s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::parse_parameters()[m[K’:
+[6.904s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Kimage_tools::name_to_reliability_policy_map[m[K’?
+[6.904s]    77 |     for (auto entry : [01;31m[Kname_to_reliability_policy_map[m[K) {
+[6.905s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.905s]       |                       [32m[Kimage_tools::name_to_reliability_policy_map[m[K
+[6.906s] In file included from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:24[m[K:
+[6.907s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/./policy_maps.hpp:24:53:[m[K [01;36m[Knote: [m[K‘[01m[Kimage_tools::name_to_reliability_policy_map[m[K’ declared here
+[6.907s]    24 | std::map<std::string, rmw_qos_reliability_policy_t> [01;36m[Kname_to_reliability_policy_map[m[K = {
+[6.911s]       |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.917s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:82:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Kimage_tools::name_to_reliability_policy_map[m[K’?
+[6.917s]    82 |     auto reliability = [01;31m[Kname_to_reliability_policy_map[m[K.find(reliability_param);
+[6.918s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.918s]       |                        [32m[Kimage_tools::name_to_reliability_policy_map[m[K
+[6.919s] In file included from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:24[m[K:
+[6.919s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/./policy_maps.hpp:24:53:[m[K [01;36m[Knote: [m[K‘[01m[Kimage_tools::name_to_reliability_policy_map[m[K’ declared here
+[6.920s]    24 | std::map<std::string, rmw_qos_reliability_policy_t> [01;36m[Kname_to_reliability_policy_map[m[K = {
+[6.920s]       |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.928s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:94:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Kimage_tools::name_to_history_policy_map[m[K’?
+[6.929s]    94 |     for (auto entry : [01;31m[Kname_to_history_policy_map[m[K) {
+[6.929s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.929s]       |                       [32m[Kimage_tools::name_to_history_policy_map[m[K
+[6.930s] In file included from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:24[m[K:
+[6.931s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/./policy_maps.hpp:30:49:[m[K [01;36m[Knote: [m[K‘[01m[Kimage_tools::name_to_history_policy_map[m[K’ declared here
+[6.932s]    30 | std::map<std::string, rmw_qos_history_policy_t> [01;36m[Kname_to_history_policy_map[m[K = {
+[6.934s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.934s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:98:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Kimage_tools::name_to_history_policy_map[m[K’?
+[6.935s]    98 |       "history", [01;31m[Kname_to_history_policy_map[m[K.begin()->first, history_desc);
+[6.935s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.939s]       |                  [32m[Kimage_tools::name_to_history_policy_map[m[K
+[6.939s] In file included from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:24[m[K:
+[6.941s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/./policy_maps.hpp:30:49:[m[K [01;36m[Knote: [m[K‘[01m[Kimage_tools::name_to_history_policy_map[m[K’ declared here
+[6.941s]    30 | std::map<std::string, rmw_qos_history_policy_t> [01;36m[Kname_to_history_policy_map[m[K = {
+[6.941s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.967s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[6.967s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:114:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.968s]   114 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+[6.968s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.428s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[12.434s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[12.436s] make: *** [Makefile:141: all] Error 2
+[12.437s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

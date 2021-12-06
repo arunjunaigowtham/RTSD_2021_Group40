@@ -1,0 +1,208 @@
+[0.000000] (-) TimerEvent: {}
+[0.000263] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.000346] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000392] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000432] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.000472] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.049317] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.050662] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.052153] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtsd-user/dev_ws/build/cpp_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/rtsd-user/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtsd-user'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1200'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/rtsd-user'), ('OLDPWD', '/home/rtsd-user/dev_ws/src/cpp_pubsub'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '978'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rtsd-user/dev_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'rtsd-user'), ('JOURNAL_STREAM', '8:31153'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtsd-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtsd-vm:@/tmp/.ICE-unix/1247,unix/rtsd-vm:/tmp/.ICE-unix/1247'), ('INVOCATION_ID', 'ff800d02ba8141d5bfd5999702876240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/259ce066_adc4_42e1_a323_c116a13ce52a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtsd-user/dev_ws/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic')]), 'shell': False}
+[0.093950] (-) TimerEvent: {}
+[0.146649] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target light_indicator\x1b[0m\n'}
+[0.194589] (-) TimerEvent: {}
+[0.209119] (cpp_pubsub) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o\x1b[0m\n'}
+[0.295965] (-) TimerEvent: {}
+[0.396577] (-) TimerEvent: {}
+[0.497188] (-) TimerEvent: {}
+[0.597676] (-) TimerEvent: {}
+[0.698185] (-) TimerEvent: {}
+[0.799858] (-) TimerEvent: {}
+[0.901033] (-) TimerEvent: {}
+[1.001698] (-) TimerEvent: {}
+[1.103666] (-) TimerEvent: {}
+[1.204837] (-) TimerEvent: {}
+[1.305617] (-) TimerEvent: {}
+[1.406576] (-) TimerEvent: {}
+[1.507434] (-) TimerEvent: {}
+[1.607942] (-) TimerEvent: {}
+[1.708475] (-) TimerEvent: {}
+[1.808940] (-) TimerEvent: {}
+[1.909398] (-) TimerEvent: {}
+[2.009983] (-) TimerEvent: {}
+[2.110500] (-) TimerEvent: {}
+[2.210991] (-) TimerEvent: {}
+[2.311518] (-) TimerEvent: {}
+[2.427513] (-) TimerEvent: {}
+[2.531889] (-) TimerEvent: {}
+[2.633318] (-) TimerEvent: {}
+[2.733749] (-) TimerEvent: {}
+[2.834252] (-) TimerEvent: {}
+[2.934767] (-) TimerEvent: {}
+[3.035288] (-) TimerEvent: {}
+[3.135810] (-) TimerEvent: {}
+[3.236368] (-) TimerEvent: {}
+[3.336878] (-) TimerEvent: {}
+[3.437366] (-) TimerEvent: {}
+[3.538451] (-) TimerEvent: {}
+[3.638984] (-) TimerEvent: {}
+[3.739610] (-) TimerEvent: {}
+[3.840252] (-) TimerEvent: {}
+[3.940804] (-) TimerEvent: {}
+[4.041340] (-) TimerEvent: {}
+[4.141837] (-) TimerEvent: {}
+[4.242365] (-) TimerEvent: {}
+[4.342953] (-) TimerEvent: {}
+[4.443468] (-) TimerEvent: {}
+[4.544738] (-) TimerEvent: {}
+[4.645228] (-) TimerEvent: {}
+[4.745849] (-) TimerEvent: {}
+[4.846397] (-) TimerEvent: {}
+[4.946891] (-) TimerEvent: {}
+[5.047371] (-) TimerEvent: {}
+[5.147895] (-) TimerEvent: {}
+[5.248523] (-) TimerEvent: {}
+[5.349181] (-) TimerEvent: {}
+[5.450464] (-) TimerEvent: {}
+[5.551056] (-) TimerEvent: {}
+[5.651613] (-) TimerEvent: {}
+[5.756267] (-) TimerEvent: {}
+[5.856598] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.856954] (-) TimerEvent: {}
+[5.857595] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.857981] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.858341] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.858653] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.858960] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.859242] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[5.859703] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.860087] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.860427] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[5.861341] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20\x1b[m\x1b[K:\n'}
+[5.861589] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.861787] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:125:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KdarknessThreshold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.861977] (cpp_pubsub) StderrLine: {'line': b'  125 |  RCLCPP_INFO(this->get_logger(), "Threshold parameter = %d", \x1b[01;31m\x1b[KdarknessThreshold_\x1b[m\x1b[K);\n'}
+[5.862157] (cpp_pubsub) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.862370] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[5.864874] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:138:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kcv::Moments m\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.865452] (cpp_pubsub) StderrLine: {'line': b'  138 |     cv::Moments \x1b[01;31m\x1b[Km\x1b[m\x1b[K = cv::moments(cvImgThresh, true);\n'}
+[5.865764] (cpp_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.866258] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:133:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar m\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.866563] (cpp_pubsub) StderrLine: {'line': b'  133 |     cv::Scalar \x1b[01;36m\x1b[Km\x1b[m\x1b[K = cv::mean(greyMat);\n'}
+[5.867211] (cpp_pubsub) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.867741] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass cv::Scalar_<double>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Km10\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.869181] (cpp_pubsub) StderrLine: {'line': b'  139 |     cv::Point p(m.\x1b[01;31m\x1b[Km10\x1b[m\x1b[K/m.m00, m.m01/m.m00);\n'}
+[5.869468] (cpp_pubsub) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.869677] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass cv::Scalar_<double>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Km00\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.869915] (cpp_pubsub) StderrLine: {'line': b'  139 |     cv::Point p(m.m10/m.\x1b[01;31m\x1b[Km00\x1b[m\x1b[K, m.m01/m.m00);\n'}
+[5.870158] (cpp_pubsub) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.870345] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass cv::Scalar_<double>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Km01\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.870557] (cpp_pubsub) StderrLine: {'line': b'  139 |     cv::Point p(m.m10/m.m00, m.\x1b[01;31m\x1b[Km01\x1b[m\x1b[K/m.m00);\n'}
+[5.870749] (cpp_pubsub) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.876992] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass cv::Scalar_<double>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Km00\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.877614] (cpp_pubsub) StderrLine: {'line': b'  139 |     cv::Point p(m.m10/m.m00, m.m01/m.\x1b[01;31m\x1b[Km00\x1b[m\x1b[K);\n'}
+[5.877902] (cpp_pubsub) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.878108] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:141:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KScalar\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.878311] (cpp_pubsub) StderrLine: {'line': b'  141 |     circle(cvImgThresh, p, 5, \x1b[01;31m\x1b[KScalar\x1b[m\x1b[K(128,0,0), -1);\n'}
+[5.878495] (cpp_pubsub) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.878676] (cpp_pubsub) StderrLine: {'line': b'      |                               \x1b[32m\x1b[Kcv::Scalar\x1b[m\x1b[K\n'}
+[5.878914] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[5.879098] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.879278] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.879457] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:27\x1b[m\x1b[K:\n'}
+[5.879633] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:669:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.879890] (cpp_pubsub) StderrLine: {'line': b'  669 | typedef Scalar_<double> \x1b[01;36m\x1b[KScalar\x1b[m\x1b[K;\n'}
+[5.880075] (cpp_pubsub) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.885491] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.885853] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.886048] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.886236] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.886420] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.886662] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.886859] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[5.887051] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.887222] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.891554] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[5.891797] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20\x1b[m\x1b[K:\n'}
+[5.891946] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:144:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[5.892109] (cpp_pubsub) StderrLine: {'line': b'  144 |     RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Center of Gravity coordinates: = %d"\x1b[m\x1b[K, cv::\x1b[32m\x1b[KMat(p)\x1b[m\x1b[K);\n'}
+[5.892227] (cpp_pubsub) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K      \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K\n'}
+[5.892346] (cpp_pubsub) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.892569] (cpp_pubsub) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[Kcv::Mat\x1b[m\x1b[K\n'}
+[5.892707] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:144:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.892829] (cpp_pubsub) StderrLine: {'line': b'  144 | PP_INFO(this->get_logger(), "Center of Gravity coordinates: = \x1b[01;36m\x1b[K%d\x1b[m\x1b[K", cv::Mat(p));\n'}
+[5.892946] (cpp_pubsub) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.893062] (cpp_pubsub) StderrLine: {'line': b'      |                                                                \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.893178] (cpp_pubsub) StderrLine: {'line': b'      |                                                                \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[5.893295] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[5.895522] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.895914] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.896166] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.896404] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.896604] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.896780] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.896954] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[5.897145] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.897357] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.897669] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[5.897862] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20\x1b[m\x1b[K:\n'}
+[5.898060] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:148:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.898250] (cpp_pubsub) StderrLine: {'line': b'  148 |     RCLCPP_INFO(this->get_logger(), "Publishing:  \'%s\'", \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.data.c_str());\n'}
+[5.898492] (cpp_pubsub) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.913845] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:160:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.915146] (cpp_pubsub) StderrLine: {'line': b'  160 |     light_publisher_->publish(\x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K);\n'}
+[5.915472] (cpp_pubsub) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.957192] (-) TimerEvent: {}
+[6.057694] (-) TimerEvent: {}
+[6.159364] (-) TimerEvent: {}
+[6.259877] (-) TimerEvent: {}
+[6.360474] (-) TimerEvent: {}
+[6.461032] (-) TimerEvent: {}
+[6.561546] (-) TimerEvent: {}
+[6.662055] (-) TimerEvent: {}
+[6.763249] (-) TimerEvent: {}
+[6.863821] (-) TimerEvent: {}
+[6.964479] (-) TimerEvent: {}
+[7.065719] (-) TimerEvent: {}
+[7.166213] (-) TimerEvent: {}
+[7.266853] (-) TimerEvent: {}
+[7.367341] (-) TimerEvent: {}
+[7.467906] (-) TimerEvent: {}
+[7.568377] (-) TimerEvent: {}
+[7.668858] (-) TimerEvent: {}
+[7.769428] (-) TimerEvent: {}
+[7.869929] (-) TimerEvent: {}
+[7.970432] (-) TimerEvent: {}
+[8.088438] (-) TimerEvent: {}
+[8.194050] (-) TimerEvent: {}
+[8.294578] (-) TimerEvent: {}
+[8.400582] (-) TimerEvent: {}
+[8.501125] (-) TimerEvent: {}
+[8.601776] (-) TimerEvent: {}
+[8.702354] (-) TimerEvent: {}
+[8.803031] (-) TimerEvent: {}
+[8.904746] (-) TimerEvent: {}
+[9.005226] (-) TimerEvent: {}
+[9.106547] (-) TimerEvent: {}
+[9.207083] (-) TimerEvent: {}
+[9.307682] (-) TimerEvent: {}
+[9.408146] (-) TimerEvent: {}
+[9.508745] (-) TimerEvent: {}
+[9.609337] (-) TimerEvent: {}
+[9.709846] (-) TimerEvent: {}
+[9.810426] (-) TimerEvent: {}
+[9.911069] (-) TimerEvent: {}
+[10.012459] (-) TimerEvent: {}
+[10.112950] (-) TimerEvent: {}
+[10.213415] (-) TimerEvent: {}
+[10.314836] (-) TimerEvent: {}
+[10.415374] (-) TimerEvent: {}
+[10.515879] (-) TimerEvent: {}
+[10.616592] (-) TimerEvent: {}
+[10.717044] (-) TimerEvent: {}
+[10.792959] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/light_indicator.dir/build.make:63: CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o] Error 1\n'}
+[10.795820] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/light_indicator.dir/all] Error 2\n'}
+[10.796180] (cpp_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[10.800749] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[10.817285] (-) TimerEvent: {}
+[10.885561] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[10.894951] (-) EventReactorShutdown: {}

@@ -1,0 +1,510 @@
+[0.059s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.160s] [35m[1mScanning dependencies of target listener[0m
+[0.251s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[5.767s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[5.768s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:170:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.768s]   170 |     header.stamp = [01;31m[Kros[m[K::Time::now();
+[5.768s]       |                    [01;31m[K^~~[m[K
+[5.768s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kimg_bridge[m[K’
+[5.768s]   172 |     [01;31m[Kimg_bridge[m[K = cv_bridge::CvImage(header, sensor_msgs::msg::image_encodings::bgr8, cvImg);
+[5.769s]       |     [01;31m[K^~~~~~~~~~[m[K
+[5.785s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:173:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg_bridge[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv_bridge[m[K’?
+[5.785s]   173 |     [01;31m[Kimg_bridge[m[K.toImageMsg(cvImg); // from cv_bridge to sensor_msgs::Image
+[5.785s]       |     [01;31m[K^~~~~~~~~~[m[K
+[5.786s]       |     [32m[Kcv_bridge[m[K
+[5.786s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:25:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kcv::Mat[m[K’)
+[5.786s]   175 |     publisher_->publish([01;31m[K*cvImg[m[K);
+[5.787s]       |                         [01;31m[K^~~~~~[m[K
+[5.787s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.787s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.788s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.788s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.788s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1237:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, int)[m[K’
+[5.788s]  1237 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (const Matx<_Tp, m, n>& a, int alpha)
+[5.789s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.789s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1237:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.789s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[5.789s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.789s]       |                          [01;36m[K^~~~~[m[K
+[5.790s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.790s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.790s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.790s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.790s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1243:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, float)[m[K’
+[5.790s]  1243 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (const Matx<_Tp, m, n>& a, float alpha)
+[5.791s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.795s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1243:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.795s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[5.796s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.797s]       |                          [01;36m[K^~~~~[m[K
+[5.797s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.797s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.797s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.797s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.797s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1249:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, n>&, double)[m[K’
+[5.797s]  1249 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (const Matx<_Tp, m, n>& a, double alpha)
+[5.797s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.798s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1249:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.798s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[5.798s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.798s]       |                          [01;36m[K^~~~~[m[K
+[5.798s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.798s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.798s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.798s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.799s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1255:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(int, const cv::Matx<_Tp, m, n>&)[m[K’
+[5.799s]  1255 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (int alpha, const Matx<_Tp, m, n>& a)
+[5.799s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.799s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1255:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.799s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.799s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.810s]       |                          [01;36m[K^~~~~[m[K
+[5.810s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.811s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.811s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.811s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.811s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1261:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(float, const cv::Matx<_Tp, m, n>&)[m[K’
+[5.811s]  1261 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (float alpha, const Matx<_Tp, m, n>& a)
+[5.811s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.811s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1261:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.812s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.812s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.812s]       |                          [01;36m[K^~~~~[m[K
+[5.812s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.812s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.812s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.812s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.812s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1267:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator*(double, const cv::Matx<_Tp, m, n>&)[m[K’
+[5.813s]  1267 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (double alpha, const Matx<_Tp, m, n>& a)
+[5.813s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.813s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1267:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.813s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.816s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.816s]       |                          [01;36m[K^~~~~[m[K
+[5.817s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.817s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.817s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.819s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.819s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1279:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n, int l> cv::Matx<_Tp, m, n> cv::operator*(const cv::Matx<_Tp, m, l>&, const cv::Matx<_Tp, l, n>&)[m[K’
+[5.820s]  1279 | Matx<_Tp, m, n> [01;36m[Koperator[m[K * (const Matx<_Tp, m, l>& a, const Matx<_Tp, l, n>& b)
+[5.820s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.820s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1279:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.820s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, l>[m[K’
+[5.820s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.820s]       |                          [01;36m[K^~~~~[m[K
+[5.821s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.821s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.821s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.823s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.823s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1285:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Vec<_Tp, m> cv::operator*(const cv::Matx<_Tp, m, n>&, const cv::Vec<_Tp, n>&)[m[K’
+[5.823s]  1285 | Vec<_Tp, m> [01;36m[Koperator[m[K * (const Matx<_Tp, m, n>& a, const Vec<_Tp, n>& b)
+[5.824s]       |             [01;36m[K^~~~~~~~[m[K
+[5.824s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1285:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.824s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[5.824s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.824s]       |                          [01;36m[K^~~~~[m[K
+[5.824s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.824s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.824s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.825s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.825s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1392:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, int)[m[K’
+[5.827s]  1392 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (const Vec<_Tp, cn>& a, int alpha)
+[5.827s]       |              [01;36m[K^~~~~~~~[m[K
+[5.827s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1392:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.827s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+[5.828s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.828s]       |                          [01;36m[K^~~~~[m[K
+[5.828s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.828s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.828s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.828s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.828s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1398:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(int, const cv::Vec<_Tp, m>&)[m[K’
+[5.829s]  1398 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (int alpha, const Vec<_Tp, cn>& a)
+[5.832s]       |              [01;36m[K^~~~~~~~[m[K
+[5.832s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1398:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.832s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.832s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.832s]       |                          [01;36m[K^~~~~[m[K
+[5.832s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.832s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.833s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.833s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.833s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1404:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, float)[m[K’
+[5.833s]  1404 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (const Vec<_Tp, cn>& a, float alpha)
+[5.833s]       |              [01;36m[K^~~~~~~~[m[K
+[5.833s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1404:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.833s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+[5.833s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.834s]       |                          [01;36m[K^~~~~[m[K
+[5.834s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.834s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.834s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.834s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.834s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1410:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(float, const cv::Vec<_Tp, m>&)[m[K’
+[5.834s]  1410 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (float alpha, const Vec<_Tp, cn>& a)
+[5.834s]       |              [01;36m[K^~~~~~~~[m[K
+[5.835s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1410:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.835s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.835s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.835s]       |                          [01;36m[K^~~~~[m[K
+[5.835s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.839s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.840s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.840s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.840s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1416:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(const cv::Vec<_Tp, m>&, double)[m[K’
+[5.840s]  1416 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (const Vec<_Tp, cn>& a, double alpha)
+[5.841s]       |              [01;36m[K^~~~~~~~[m[K
+[5.841s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1416:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.841s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+[5.841s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.841s]       |                          [01;36m[K^~~~~[m[K
+[5.844s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.844s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.844s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.844s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.844s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1422:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator*(double, const cv::Vec<_Tp, m>&)[m[K’
+[5.844s]  1422 | Vec<_Tp, cn> [01;36m[Koperator[m[K * (double alpha, const Vec<_Tp, cn>& a)
+[5.844s]       |              [01;36m[K^~~~~~~~[m[K
+[5.844s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1422:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.845s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.845s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.845s]       |                          [01;36m[K^~~~~[m[K
+[5.845s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[5.845s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.845s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.847s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.848s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1453:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Vec<_Tp, 4> cv::operator*(const cv::Vec<_Tp, 4>&, const cv::Vec<_Tp, 4>&)[m[K’
+[5.848s]  1453 | template<typename _Tp> inline Vec<_Tp, 4> [01;36m[Koperator[m[K * (const Vec<_Tp, 4>& v1, const Vec<_Tp, 4>& v2)
+[5.848s]       |                                           [01;36m[K^~~~~~~~[m[K
+[5.848s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1453:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.848s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, 4>[m[K’
+[5.848s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.848s]       |                          [01;36m[K^~~~~[m[K
+[5.848s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.849s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.849s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.849s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.849s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1057:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)[m[K’
+[5.849s]  1057 | Complex<_Tp> [01;36m[Koperator[m[K * (const Complex<_Tp>& a, const Complex<_Tp>& b)
+[5.851s]       |              [01;36m[K^~~~~~~~[m[K
+[5.851s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1057:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.852s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[5.852s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.852s]       |                          [01;36m[K^~~~~[m[K
+[5.852s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.852s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.852s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.852s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.853s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1063:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(const cv::Complex<_Tp>&, _Tp)[m[K’
+[5.853s]  1063 | Complex<_Tp> [01;36m[Koperator[m[K * (const Complex<_Tp>& a, _Tp b)
+[5.853s]       |              [01;36m[K^~~~~~~~[m[K
+[5.853s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1063:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.855s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[5.855s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.855s]       |                          [01;36m[K^~~~~[m[K
+[5.856s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.856s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.856s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.856s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.856s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1069:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator*(_Tp, const cv::Complex<_Tp>&)[m[K’
+[5.856s]  1069 | Complex<_Tp> [01;36m[Koperator[m[K * (_Tp b, const Complex<_Tp>& a)
+[5.856s]       |              [01;36m[K^~~~~~~~[m[K
+[5.856s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1069:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.857s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.857s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.857s]       |                          [01;36m[K^~~~~[m[K
+[5.859s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.859s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.859s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.860s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.860s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1335:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, int)[m[K’
+[5.860s]  1335 | Point_<_Tp> [01;36m[Koperator[m[K * (const Point_<_Tp>& a, int b)
+[5.860s]       |             [01;36m[K^~~~~~~~[m[K
+[5.860s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1335:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.860s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+[5.860s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.860s]       |                          [01;36m[K^~~~~[m[K
+[5.861s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.861s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.861s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.874s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.875s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1341:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(int, const cv::Point_<_Tp>&)[m[K’
+[5.875s]  1341 | Point_<_Tp> [01;36m[Koperator[m[K * (int a, const Point_<_Tp>& b)
+[5.875s]       |             [01;36m[K^~~~~~~~[m[K
+[5.875s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1341:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.875s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.875s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.876s]       |                          [01;36m[K^~~~~[m[K
+[5.876s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.876s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.877s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.877s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.877s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1347:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, float)[m[K’
+[5.877s]  1347 | Point_<_Tp> [01;36m[Koperator[m[K * (const Point_<_Tp>& a, float b)
+[5.877s]       |             [01;36m[K^~~~~~~~[m[K
+[5.877s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1347:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.877s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+[5.878s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.879s]       |                          [01;36m[K^~~~~[m[K
+[5.879s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.879s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.879s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.879s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.879s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1353:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(float, const cv::Point_<_Tp>&)[m[K’
+[5.881s]  1353 | Point_<_Tp> [01;36m[Koperator[m[K * (float a, const Point_<_Tp>& b)
+[5.881s]       |             [01;36m[K^~~~~~~~[m[K
+[5.881s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1353:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.881s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.883s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.884s]       |                          [01;36m[K^~~~~[m[K
+[5.884s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.884s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.884s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.884s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.884s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1359:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Point_<_Tp>&, double)[m[K’
+[5.884s]  1359 | Point_<_Tp> [01;36m[Koperator[m[K * (const Point_<_Tp>& a, double b)
+[5.885s]       |             [01;36m[K^~~~~~~~[m[K
+[5.885s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1359:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.885s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+[5.885s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.885s]       |                          [01;36m[K^~~~~[m[K
+[5.885s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.887s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.888s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.888s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.888s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1365:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(double, const cv::Point_<_Tp>&)[m[K’
+[5.888s]  1365 | Point_<_Tp> [01;36m[Koperator[m[K * (double a, const Point_<_Tp>& b)
+[5.888s]       |             [01;36m[K^~~~~~~~[m[K
+[5.888s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1365:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.888s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.889s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.889s]       |                          [01;36m[K^~~~~[m[K
+[5.889s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.889s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.889s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.891s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.891s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1371:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator*(const cv::Matx<_Tp, 2, 2>&, const cv::Point_<_Tp>&)[m[K’
+[5.892s]  1371 | Point_<_Tp> [01;36m[Koperator[m[K * (const Matx<_Tp, 2, 2>& a, const Point_<_Tp>& b)
+[5.892s]       |             [01;36m[K^~~~~~~~[m[K
+[5.892s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1371:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.892s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, 2, 2>[m[K’
+[5.892s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.892s]       |                          [01;36m[K^~~~~[m[K
+[5.892s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.892s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.893s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.893s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1378:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Matx<_Tp, 3, 3>&, const cv::Point_<_Tp>&)[m[K’
+[5.893s]  1378 | Point3_<_Tp> [01;36m[Koperator[m[K * (const Matx<_Tp, 3, 3>& a, const Point_<_Tp>& b)
+[5.896s]       |              [01;36m[K^~~~~~~~[m[K
+[5.897s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1378:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.897s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, 3, 3>[m[K’
+[5.897s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.897s]       |                          [01;36m[K^~~~~[m[K
+[5.897s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.897s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.897s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.898s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1604:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, int)[m[K’
+[5.898s]  1604 | Point3_<_Tp> [01;36m[Koperator[m[K * (const Point3_<_Tp>& a, int b)
+[5.898s]       |              [01;36m[K^~~~~~~~[m[K
+[5.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1604:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.898s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+[5.898s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.898s]       |                          [01;36m[K^~~~~[m[K
+[5.899s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.899s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.899s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.899s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.899s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1610:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(int, const cv::Point3_<_Tp>&)[m[K’
+[5.899s]  1610 | Point3_<_Tp> [01;36m[Koperator[m[K * (int a, const Point3_<_Tp>& b)
+[5.903s]       |              [01;36m[K^~~~~~~~[m[K
+[5.903s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1610:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.904s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.904s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.904s]       |                          [01;36m[K^~~~~[m[K
+[5.904s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.904s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.905s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.905s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.905s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1616:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, float)[m[K’
+[5.905s]  1616 | Point3_<_Tp> [01;36m[Koperator[m[K * (const Point3_<_Tp>& a, float b)
+[5.905s]       |              [01;36m[K^~~~~~~~[m[K
+[5.905s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1616:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.905s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+[5.906s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.906s]       |                          [01;36m[K^~~~~[m[K
+[5.906s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.906s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.906s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.906s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.906s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1622:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(float, const cv::Point3_<_Tp>&)[m[K’
+[5.909s]  1622 | Point3_<_Tp> [01;36m[Koperator[m[K * (float a, const Point3_<_Tp>& b)
+[5.909s]       |              [01;36m[K^~~~~~~~[m[K
+[5.909s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1622:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.909s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.909s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.910s]       |                          [01;36m[K^~~~~[m[K
+[5.910s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.910s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.910s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.910s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.910s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1628:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Point3_<_Tp>&, double)[m[K’
+[5.910s]  1628 | Point3_<_Tp> [01;36m[Koperator[m[K * (const Point3_<_Tp>& a, double b)
+[5.910s]       |              [01;36m[K^~~~~~~~[m[K
+[5.911s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1628:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.913s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+[5.913s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.913s]       |                          [01;36m[K^~~~~[m[K
+[5.913s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.913s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.914s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.914s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.914s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1634:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(double, const cv::Point3_<_Tp>&)[m[K’
+[5.914s]  1634 | Point3_<_Tp> [01;36m[Koperator[m[K * (double a, const Point3_<_Tp>& b)
+[5.914s]       |              [01;36m[K^~~~~~~~[m[K
+[5.914s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1634:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.914s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.914s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.914s]       |                          [01;36m[K^~~~~[m[K
+[5.917s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.917s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.917s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.917s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.917s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1640:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator*(const cv::Matx<_Tp, 3, 3>&, const cv::Point3_<_Tp>&)[m[K’
+[5.917s]  1640 | Point3_<_Tp> [01;36m[Koperator[m[K * (const Matx<_Tp, 3, 3>& a, const Point3_<_Tp>& b)
+[5.918s]       |              [01;36m[K^~~~~~~~[m[K
+[5.918s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1640:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.918s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, 3, 3>[m[K’
+[5.918s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.918s]       |                          [01;36m[K^~~~~[m[K
+[5.918s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.918s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.918s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.921s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.921s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1647:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Matx<T2, 4, 1> cv::operator*(const cv::Matx<_Tp, 4, 4>&, const cv::Point3_<_Tp>&)[m[K’
+[5.921s]  1647 | Matx<_Tp, 4, 1> [01;36m[Koperator[m[K * (const Matx<_Tp, 4, 4>& a, const Point3_<_Tp>& b)
+[5.921s]       |                 [01;36m[K^~~~~~~~[m[K
+[5.921s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1647:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.921s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, 4, 4>[m[K’
+[5.921s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.922s]       |                          [01;36m[K^~~~~[m[K
+[5.922s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.922s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.922s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.924s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.925s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1751:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Size_<_Tp> cv::operator*(const cv::Size_<_Tp>&, _Tp)[m[K’
+[5.925s]  1751 | Size_<_Tp> [01;36m[Koperator[m[K * (const Size_<_Tp>& a, _Tp b)
+[5.925s]       |            [01;36m[K^~~~~~~~[m[K
+[5.925s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1751:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.925s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Size_<_Tp>[m[K’
+[5.925s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.925s]       |                          [01;36m[K^~~~~[m[K
+[5.926s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.926s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.926s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.926s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.926s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2318:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(const cv::Scalar_<_Tp>&, _Tp)[m[K’
+[5.926s]  2318 | Scalar_<_Tp> [01;36m[Koperator[m[K * (const Scalar_<_Tp>& a, _Tp alpha)
+[5.928s]       |              [01;36m[K^~~~~~~~[m[K
+[5.929s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2318:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.929s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+[5.929s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.929s]       |                          [01;36m[K^~~~~[m[K
+[5.929s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.929s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.934s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.934s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.934s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2327:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(_Tp, const cv::Scalar_<_Tp>&)[m[K’
+[5.934s]  2327 | Scalar_<_Tp> [01;36m[Koperator[m[K * (_Tp alpha, const Scalar_<_Tp>& a)
+[5.934s]       |              [01;36m[K^~~~~~~~[m[K
+[5.934s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2327:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.934s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.935s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.935s]       |                          [01;36m[K^~~~~[m[K
+[5.935s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.935s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.935s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.935s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.935s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2343:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator*(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)[m[K’
+[5.935s]  2343 | Scalar_<_Tp> [01;36m[Koperator[m[K * (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+[5.936s]       |              [01;36m[K^~~~~~~~[m[K
+[5.936s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2343:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.936s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+[5.936s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.936s]       |                          [01;36m[K^~~~~[m[K
+[5.936s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.936s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.937s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.937s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.937s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2409:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar cv::operator*(const cv::Matx<_Tp, 4, 4>&, const Scalar&)[m[K’
+[5.937s]  2409 | Scalar [01;36m[Koperator[m[K * (const Matx<_Tp, 4, 4>& a, const Scalar& b)
+[5.937s]       |        [01;36m[K^~~~~~~~[m[K
+[5.937s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2409:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.937s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, 4, 4>[m[K’
+[5.937s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.937s]       |                          [01;36m[K^~~~~[m[K
+[5.938s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[5.938s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.938s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.938s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.940s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3586:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::Mat&, const cv::Mat&)[m[K’
+[5.941s]  3586 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const Mat& a, const Mat& b);
+[5.941s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.941s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3586:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.941s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3587:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::Mat&, double)[m[K’
+[5.941s]  3587 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const Mat& a, double s);
+[5.941s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.941s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3587:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.942s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3588:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(double, const cv::Mat&)[m[K’
+[5.942s]  3588 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (double s, const Mat& a);
+[5.942s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.944s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3588:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.944s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3589:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::MatExpr&, const cv::Mat&)[m[K’
+[5.944s]  3589 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const MatExpr& e, const Mat& m);
+[5.944s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.945s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3589:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.945s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3590:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::Mat&, const cv::MatExpr&)[m[K’
+[5.945s]  3590 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const Mat& m, const MatExpr& e);
+[5.945s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.945s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3590:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.945s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3591:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::MatExpr&, double)[m[K’
+[5.945s]  3591 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const MatExpr& e, double s);
+[5.945s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.946s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3591:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.948s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3592:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(double, const cv::MatExpr&)[m[K’
+[5.948s]  3592 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (double s, const MatExpr& e);
+[5.948s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.948s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3592:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.948s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3593:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator*(const cv::MatExpr&, const cv::MatExpr&)[m[K’
+[5.949s]  3593 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K * (const MatExpr& e1, const MatExpr& e2);
+[5.949s]       |                    [01;36m[K^~~~~~~~[m[K
+[5.949s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3593:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.949s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3595:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator*(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[5.949s]  3595 | MatExpr [01;36m[Koperator[m[K * (const Mat& a, const Matx<_Tp, m, n>& b) { return a * Mat(b); }
+[5.949s]       |         [01;36m[K^~~~~~~~[m[K
+[5.949s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3595:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.950s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.952s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.952s]       |                          [01;36m[K^~~~~[m[K
+[5.952s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[5.952s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.952s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.953s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.966s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator*(const cv::Matx<_Tp, m, n>&, const cv::Mat&)[m[K’
+[5.968s]  3597 | MatExpr [01;36m[Koperator[m[K * (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) * b; }
+[5.968s]       |         [01;36m[K^~~~~~~~[m[K
+[5.969s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.969s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[5.970s]   175 |     publisher_->publish(*[01;36m[KcvImg[m[K);
+[5.970s]       |                          [01;36m[K^~~~~[m[K
+[5.970s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:145:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krows[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.972s]   145 |     int [01;35m[Krows[m[K = msg->height;
+[5.973s]       |         [01;35m[K^~~~[m[K
+[5.973s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:146:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcolumns[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.973s]   146 |     int [01;35m[Kcolumns[m[K = msg->width;
+[5.973s]       |         [01;35m[K^~~~~~~[m[K
+[10.375s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[10.379s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[10.383s] make: *** [Makefile:141: all] Error 2
+[10.384s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

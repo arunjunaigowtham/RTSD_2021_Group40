@@ -1,0 +1,11 @@
+[0.019s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.112s] [35m[1mScanning dependencies of target listener[0m
+[0.159s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.379s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:23:10:[m[K [01;31m[Kfatal error: [m[Kimage_tools/cv_mat_sensor_msgs_image_type_adapter.hpp: No such file or directory
+[0.380s]    23 | #include [01;31m[K"image_tools/cv_mat_sensor_msgs_image_type_adapter.hpp"[m[K
+[0.380s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.380s] compilation terminated.
+[0.384s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[0.386s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[0.387s] make: *** [Makefile:141: all] Error 2
+[0.392s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

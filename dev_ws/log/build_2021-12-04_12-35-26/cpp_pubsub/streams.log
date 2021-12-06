@@ -1,0 +1,12 @@
+[0.098s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.346s] [35m[1mScanning dependencies of target listener[0m
+[0.505s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[12.221s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[12.222s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:67:75:[m[K [01;31m[Kerror: [m[K‘[01m[K_0[m[K’ was not declared in this scope; did you mean ‘[01m[Ky0[m[K’?
+[12.222s]    67 | e", qos, std::bind(&MinimalSubscriber::topic_callback, this, [01;31m[K_0[m[K));
+[12.223s]       |                                                              [01;31m[K^~[m[K
+[12.224s]       |                                                              [32m[Ky0[m[K
+[15.841s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[15.855s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[15.856s] make: *** [Makefile:141: all] Error 2
+[15.863s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

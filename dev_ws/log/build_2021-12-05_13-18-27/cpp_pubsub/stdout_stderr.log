@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target listener[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:165:30:[m[K [01;31m[Kerror: [m[K‘[01m[KCOLOR_BGR2GRAY[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::COLOR_BGR2GRAY[m[K’?
+  165 |     cvtColor(cv_ptr, cv_ptr, [01;31m[KCOLOR_BGR2GRAY[m[K);
+      |                              [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                              [32m[Kcv::COLOR_BGR2GRAY[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:48[m[K,
+                 from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:44[m[K,
+                 from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[01m[K/usr/include/opencv4/opencv2/imgproc.hpp:542:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::COLOR_BGR2GRAY[m[K’ declared here
+  542 |     [01;36m[KCOLOR_BGR2GRAY[m[K     = 6, //!< convert between RGB/BGR and grayscale, @ref color_convert_rgb_gray "color conversions"
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:145:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krows[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  145 |     int [01;35m[Krows[m[K = msg->height;
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:146:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcolumns[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  146 |     int [01;35m[Kcolumns[m[K = msg->width;
+      |         [01;35m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

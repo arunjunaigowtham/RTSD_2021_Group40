@@ -1,0 +1,26 @@
+[0.025s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_parameters -- -j1 -l1
+[0.111s] [35m[1mScanning dependencies of target parameter_node[0m
+[0.159s] [ 50%] [32mBuilding CXX object CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o[0m
+[7.896s] [100%] [32m[1mLinking CXX executable parameter_node[0m
+[8.222s] [100%] Built target parameter_node
+[8.240s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_parameters -- -j1 -l1
+[8.293s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_parameters
+[8.309s] -- Install configuration: ""
+[8.310s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_parameters/lib/cpp_parameters/parameter_node
+[8.316s] -- Set runtime path of "/home/rtsd-user/dev_ws/install/cpp_parameters/lib/cpp_parameters/parameter_node" to ""
+[8.316s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/ament_index/resource_index/package_run_dependencies/cpp_parameters
+[8.317s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/ament_index/resource_index/parent_prefix_path/cpp_parameters
+[8.317s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.sh
+[8.317s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.dsv
+[8.318s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/environment/path.sh
+[8.318s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/environment/path.dsv
+[8.318s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/local_setup.bash
+[8.319s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/local_setup.sh
+[8.319s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/local_setup.zsh
+[8.319s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/local_setup.dsv
+[8.320s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/package.dsv
+[8.320s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/ament_index/resource_index/packages/cpp_parameters
+[8.320s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig.cmake
+[8.321s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig-version.cmake
+[8.321s] -- Up-to-date: /home/rtsd-user/dev_ws/install/cpp_parameters/share/cpp_parameters/package.xml
+[8.328s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_parameters

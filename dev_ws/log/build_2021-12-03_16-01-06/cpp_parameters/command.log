@@ -1,0 +1,2 @@
+Invoking command in '/home/rtsd-user/dev_ws/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/cpp_parameters -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/cpp_parameters
+Invoked command in '/home/rtsd-user/dev_ws/build/cpp_parameters' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/cpp_parameters -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/cpp_parameters

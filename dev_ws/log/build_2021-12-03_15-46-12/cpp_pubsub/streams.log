@@ -1,0 +1,83 @@
+[0.025s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/cpp_pubsub
+[0.191s] -- The C compiler identification is GNU 9.3.0
+[0.347s] -- The CXX compiler identification is GNU 9.3.0
+[0.357s] -- Check for working C compiler: /usr/bin/cc
+[0.508s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.512s] -- Detecting C compiler ABI info
+[0.699s] -- Detecting C compiler ABI info - done
+[0.740s] -- Detecting C compile features
+[0.741s] -- Detecting C compile features - done
+[0.749s] -- Check for working CXX compiler: /usr/bin/c++
+[0.916s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.919s] -- Detecting CXX compiler ABI info
+[1.112s] -- Detecting CXX compiler ABI info - done
+[1.150s] -- Detecting CXX compile features
+[1.152s] -- Detecting CXX compile features - done
+[1.156s] -- Found ament_cmake: 1.1.4 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.212s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.213s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.377s] -- Found rclcpp: 9.1.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.499s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.654s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.718s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.897s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.063s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.070s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.125s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.127s] -- Looking for pthread.h
+[2.277s] -- Looking for pthread.h - found
+[2.278s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.422s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.423s] -- Looking for pthread_create in pthreads
+[2.533s] -- Looking for pthread_create in pthreads - not found
+[2.534s] -- Looking for pthread_create in pthread
+[2.669s] -- Looking for pthread_create in pthread - found
+[2.672s] -- Found Threads: TRUE  
+[3.163s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[3.333s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.336s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.337s] -- Configured cppcheck include dirs: 
+[3.337s] -- Configured cppcheck exclude dirs and/or files: 
+[3.339s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.340s] -- Configured cpplint exclude dirs and/or files: 
+[3.343s] -- Added test 'lint_cmake' to check CMake code style
+[3.349s] -- Added test 'uncrustify' to check C / C++ code style
+[3.350s] -- Configured uncrustify additional arguments: 
+[3.351s] -- Added test 'xmllint' to check XML markup files
+[3.357s] -- Configuring done
+[3.385s] -- Generating done
+[3.389s] -- Build files have been written to: /home/rtsd-user/dev_ws/build/cpp_pubsub
+[3.405s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/cpp_pubsub
+[3.406s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[3.491s] [35m[1mScanning dependencies of target listener[0m
+[3.591s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[22.677s] [ 50%] [32m[1mLinking CXX executable listener[0m
+[23.347s] [ 50%] Built target listener
+[23.374s] [35m[1mScanning dependencies of target talker[0m
+[23.482s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[33.120s] [100%] [32m[1mLinking CXX executable talker[0m
+[33.535s] [100%] Built target talker
+[33.564s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[33.635s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_pubsub
+[33.660s] -- Install configuration: ""
+[33.663s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[33.665s] -- Set runtime path of "/home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[33.666s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[33.671s] -- Set runtime path of "/home/rtsd-user/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[33.671s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[33.672s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[33.673s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[33.675s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[33.676s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[33.676s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[33.677s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[33.681s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[33.681s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[33.682s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[33.683s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[33.683s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[33.684s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[33.684s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[33.685s] -- Installing: /home/rtsd-user/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[33.690s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/cpp_pubsub

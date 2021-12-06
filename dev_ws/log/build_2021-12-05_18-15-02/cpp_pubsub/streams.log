@@ -1,0 +1,91 @@
+[0.053s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.146s] [35m[1mScanning dependencies of target light_indicator[0m
+[0.209s] [ 16%] [32mBuilding CXX object CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o[0m
+[5.856s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[5.857s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[5.858s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[5.858s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.858s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.859s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[5.859s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[5.859s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.860s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[5.860s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.861s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20[m[K:
+[5.861s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[5.861s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:125:65:[m[K [01;31m[Kerror: [m[K‘[01m[KdarknessThreshold_[m[K’ was not declared in this scope
+[5.862s]   125 |  RCLCPP_INFO(this->get_logger(), "Threshold parameter = %d", [01;31m[KdarknessThreshold_[m[K);
+[5.862s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.862s] 
+[5.865s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:138:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcv::Moments m[m[K’
+[5.865s]   138 |     cv::Moments [01;31m[Km[m[K = cv::moments(cvImgThresh, true);
+[5.866s]       |                 [01;31m[K^[m[K
+[5.866s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:133:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcv::Scalar m[m[K’
+[5.866s]   133 |     cv::Scalar [01;36m[Km[m[K = cv::mean(greyMat);
+[5.867s]       |                [01;36m[K^[m[K
+[5.868s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kclass cv::Scalar_<double>[m[K’} has no member named ‘[01m[Km10[m[K’
+[5.869s]   139 |     cv::Point p(m.[01;31m[Km10[m[K/m.m00, m.m01/m.m00);
+[5.869s]       |                   [01;31m[K^~~[m[K
+[5.869s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kclass cv::Scalar_<double>[m[K’} has no member named ‘[01m[Km00[m[K’
+[5.870s]   139 |     cv::Point p(m.m10/m.[01;31m[Km00[m[K, m.m01/m.m00);
+[5.870s]       |                         [01;31m[K^~~[m[K
+[5.870s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kclass cv::Scalar_<double>[m[K’} has no member named ‘[01m[Km01[m[K’
+[5.870s]   139 |     cv::Point p(m.m10/m.m00, m.[01;31m[Km01[m[K/m.m00);
+[5.870s]       |                                [01;31m[K^~~[m[K
+[5.877s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:139:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kclass cv::Scalar_<double>[m[K’} has no member named ‘[01m[Km00[m[K’
+[5.877s]   139 |     cv::Point p(m.m10/m.m00, m.m01/m.[01;31m[Km00[m[K);
+[5.878s]       |                                      [01;31m[K^~~[m[K
+[5.878s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:141:31:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Scalar[m[K’?
+[5.878s]   141 |     circle(cvImgThresh, p, 5, [01;31m[KScalar[m[K(128,0,0), -1);
+[5.878s]       |                               [01;31m[K^~~~~~[m[K
+[5.878s]       |                               [32m[Kcv::Scalar[m[K
+[5.879s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[5.879s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.879s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:43[m[K,
+[5.879s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:27[m[K:
+[5.879s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:669:25:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Scalar[m[K’ declared here
+[5.880s]   669 | typedef Scalar_<double> [01;36m[KScalar[m[K;
+[5.880s]       |                         [01;36m[K^~~~~~[m[K
+[5.885s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[5.886s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[5.886s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[5.886s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.886s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.886s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[5.887s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[5.887s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.891s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[5.891s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.891s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20[m[K:
+[5.892s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:144:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kcv::Mat[m[K’ [[01;35m[K-Wformat=[m[K]
+[5.892s]   144 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Center of Gravity coordinates: = %d"[m[K, cv::[32m[KMat(p)[m[K);
+[5.892s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K      [32m[K~~~~~~[m[K
+[5.892s]       |                                                                                [32m[K|[m[K
+[5.892s]       |                                                                                [32m[Kcv::Mat[m[K
+[5.892s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:144:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.892s]   144 | PP_INFO(this->get_logger(), "Center of Gravity coordinates: = [01;36m[K%d[m[K", cv::Mat(p));
+[5.893s]       |                                                               [01;36m[K~^[m[K
+[5.893s]       |                                                                [01;36m[K|[m[K
+[5.893s]       |                                                                [01;36m[Kint[m[K
+[5.893s] 
+[5.895s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[5.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[5.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[5.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[5.897s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[5.897s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.897s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[5.897s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.897s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20[m[K:
+[5.898s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:148:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[5.898s]   148 |     RCLCPP_INFO(this->get_logger(), "Publishing:  '%s'", [01;31m[Kmessage[m[K.data.c_str());
+[5.898s]       |                                                          [01;31m[K^~~~~~~[m[K
+[5.914s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:160:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[5.915s]   160 |     light_publisher_->publish([01;31m[Kmessage[m[K);
+[5.915s]       |                               [01;31m[K^~~~~~~[m[K
+[10.793s] make[2]: *** [CMakeFiles/light_indicator.dir/build.make:63: CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o] Error 1
+[10.796s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/light_indicator.dir/all] Error 2
+[10.796s] make: *** [Makefile:141: all] Error 2
+[10.801s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

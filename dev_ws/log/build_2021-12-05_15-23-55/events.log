@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.001983] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.002094] (-) JobUnselected: {'identifier': 'my_package'}
+[0.002155] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.002218] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.002285] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.054472] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.060185] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.061601] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtsd-user/dev_ws/build/cpp_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/rtsd-user/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtsd-user'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1200'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/rtsd-user'), ('OLDPWD', '/home/rtsd-user/dev_ws/src/cpp_pubsub'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '978'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rtsd-user/dev_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'rtsd-user'), ('JOURNAL_STREAM', '8:31153'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtsd-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtsd-vm:@/tmp/.ICE-unix/1247,unix/rtsd-vm:/tmp/.ICE-unix/1247'), ('INVOCATION_ID', 'ff800d02ba8141d5bfd5999702876240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/259ce066_adc4_42e1_a323_c116a13ce52a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtsd-user/dev_ws/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rtsd-user/dev_ws/install/turtlesim/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rtsd-user/dev_ws/install/turtlesim:/home/rtsd-user/dev_ws/install/my_package:/home/rtsd-user/dev_ws/install/cpp_pubsub:/home/rtsd-user/dev_ws/install/cpp_parameters:/opt/ros/galactic')]), 'shell': False}
+[0.098205] (-) TimerEvent: {}
+[0.198934] (-) TimerEvent: {}
+[0.244920] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.299359] (-) TimerEvent: {}
+[0.337419] (cpp_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.399509] (-) TimerEvent: {}
+[0.500028] (-) TimerEvent: {}
+[0.600518] (-) TimerEvent: {}
+[0.701129] (-) TimerEvent: {}
+[0.802014] (-) TimerEvent: {}
+[0.902857] (-) TimerEvent: {}
+[1.003346] (-) TimerEvent: {}
+[1.104060] (-) TimerEvent: {}
+[1.206014] (-) TimerEvent: {}
+[1.307839] (-) TimerEvent: {}
+[1.411484] (-) TimerEvent: {}
+[1.512145] (-) TimerEvent: {}
+[1.612645] (-) TimerEvent: {}
+[1.716613] (-) TimerEvent: {}
+[1.817486] (-) TimerEvent: {}
+[1.917978] (-) TimerEvent: {}
+[2.018604] (-) TimerEvent: {}
+[2.123148] (-) TimerEvent: {}
+[2.224823] (-) TimerEvent: {}
+[2.326475] (-) TimerEvent: {}
+[2.427552] (-) TimerEvent: {}
+[2.532921] (-) TimerEvent: {}
+[2.633478] (-) TimerEvent: {}
+[2.733983] (-) TimerEvent: {}
+[2.834705] (-) TimerEvent: {}
+[2.935231] (-) TimerEvent: {}
+[3.037543] (-) TimerEvent: {}
+[3.137989] (-) TimerEvent: {}
+[3.241319] (-) TimerEvent: {}
+[3.347611] (-) TimerEvent: {}
+[3.448240] (-) TimerEvent: {}
+[3.548765] (-) TimerEvent: {}
+[3.649443] (-) TimerEvent: {}
+[3.749957] (-) TimerEvent: {}
+[3.850478] (-) TimerEvent: {}
+[3.951128] (-) TimerEvent: {}
+[4.051678] (-) TimerEvent: {}
+[4.152158] (-) TimerEvent: {}
+[4.252706] (-) TimerEvent: {}
+[4.354836] (-) TimerEvent: {}
+[4.459639] (-) TimerEvent: {}
+[4.569860] (-) TimerEvent: {}
+[4.670378] (-) TimerEvent: {}
+[4.770945] (-) TimerEvent: {}
+[4.871493] (-) TimerEvent: {}
+[4.975181] (-) TimerEvent: {}
+[5.077155] (-) TimerEvent: {}
+[5.177727] (-) TimerEvent: {}
+[5.278245] (-) TimerEvent: {}
+[5.378967] (-) TimerEvent: {}
+[5.479492] (-) TimerEvent: {}
+[5.580070] (-) TimerEvent: {}
+[5.681159] (-) TimerEvent: {}
+[5.781694] (-) TimerEvent: {}
+[5.882210] (-) TimerEvent: {}
+[5.983161] (-) TimerEvent: {}
+[6.083666] (-) TimerEvent: {}
+[6.188437] (-) TimerEvent: {}
+[6.289747] (-) TimerEvent: {}
+[6.391339] (-) TimerEvent: {}
+[6.494586] (-) TimerEvent: {}
+[6.595115] (-) TimerEvent: {}
+[6.695645] (-) TimerEvent: {}
+[6.796160] (-) TimerEvent: {}
+[6.896659] (-) TimerEvent: {}
+[6.997157] (-) TimerEvent: {}
+[7.097628] (-) TimerEvent: {}
+[7.198205] (-) TimerEvent: {}
+[7.298803] (-) TimerEvent: {}
+[7.399287] (-) TimerEvent: {}
+[7.499828] (-) TimerEvent: {}
+[7.600326] (-) TimerEvent: {}
+[7.700749] (-) TimerEvent: {}
+[7.787604] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.787942] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KdarknessThreshold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.788237] (cpp_pubsub) StderrLine: {'line': b'  172 |     \x1b[01;31m\x1b[KdarknessThreshold_\x1b[m\x1b[K = this->declare_parameter("threshold", 40.0);\n'}
+[7.788593] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.789310] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::declare_parameter(const char [10], double) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.789591] (cpp_pubsub) StderrLine: {'line': b'  172 |     darknessThreshold_ = this->declare_parameter("threshold", 40.0\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.789789] (cpp_pubsub) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.790116] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:1315\x1b[m\x1b[K,\n'}
+[7.790308] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[7.790581] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[7.790772] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[7.790946] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20\x1b[m\x1b[K:\n'}
+[7.791133] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:196:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99 <near match>\n'}
+[7.791319] (cpp_pubsub) StderrLine: {'line': b'  196 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::declare_parameter(\n'}
+[7.810688] (-) TimerEvent: {}
+[7.811872] (cpp_pubsub) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.812249] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:196:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  passing \xe2\x80\x98\x1b[01m\x1b[Kconst MinimalSubscriber*\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers\n'}
+[7.813311] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[7.813733] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[7.813990] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[7.814176] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20\x1b[m\x1b[K:\n'}
+[7.814373] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:365:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.814649] (cpp_pubsub) StderrLine: {'line': b'  365 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[7.814828] (cpp_pubsub) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.815248] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:367:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.815469] (cpp_pubsub) StderrLine: {'line': b'  367 |     \x1b[01;36m\x1b[Kconst rclcpp::ParameterValue & default_value\x1b[m\x1b[K,\n'}
+[7.815650] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.815946] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:390:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.816154] (cpp_pubsub) StderrLine: {'line': b'  390 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[7.816331] (cpp_pubsub) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.816541] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:392:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::ParameterType\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.816723] (cpp_pubsub) StderrLine: {'line': b'  392 |     \x1b[01;36m\x1b[Krclcpp::ParameterType type\x1b[m\x1b[K,\n'}
+[7.816949] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.817299] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:411:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.817444] (cpp_pubsub) StderrLine: {'line': b'  411 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[7.817562] (cpp_pubsub) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.817678] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:411:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[7.824641] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:449:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.824885] (cpp_pubsub) StderrLine: {'line': b'  449 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[7.825012] (cpp_pubsub) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.825130] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:449:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.825250] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.825370] (cpp_pubsub) StderrLine: {'line': b'  172 |     darknessThreshold_ = this->declare_parameter("threshold", 40.0\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.825500] (cpp_pubsub) StderrLine: {'line': b'      |                                                                   \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.832849] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:183:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KdarknessThreshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.833133] (cpp_pubsub) StderrLine: {'line': b'  183 |     if (m[0] < \x1b[01;31m\x1b[KdarknessThreshold\x1b[m\x1b[K) {\n'}
+[7.833321] (cpp_pubsub) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.910851] (-) TimerEvent: {}
+[8.011379] (-) TimerEvent: {}
+[8.111846] (-) TimerEvent: {}
+[8.212373] (-) TimerEvent: {}
+[8.313714] (-) TimerEvent: {}
+[8.414261] (-) TimerEvent: {}
+[8.514751] (-) TimerEvent: {}
+[8.615308] (-) TimerEvent: {}
+[8.716898] (-) TimerEvent: {}
+[8.818682] (-) TimerEvent: {}
+[8.919099] (-) TimerEvent: {}
+[9.019572] (-) TimerEvent: {}
+[9.120020] (-) TimerEvent: {}
+[9.220530] (-) TimerEvent: {}
+[9.320990] (-) TimerEvent: {}
+[9.423307] (-) TimerEvent: {}
+[9.524203] (-) TimerEvent: {}
+[9.626613] (-) TimerEvent: {}
+[9.728440] (-) TimerEvent: {}
+[9.828939] (-) TimerEvent: {}
+[9.930105] (-) TimerEvent: {}
+[10.030565] (-) TimerEvent: {}
+[10.131067] (-) TimerEvent: {}
+[10.231668] (-) TimerEvent: {}
+[10.333339] (-) TimerEvent: {}
+[10.433775] (-) TimerEvent: {}
+[10.534737] (-) TimerEvent: {}
+[10.636358] (-) TimerEvent: {}
+[10.736868] (-) TimerEvent: {}
+[10.837402] (-) TimerEvent: {}
+[10.937945] (-) TimerEvent: {}
+[11.043479] (-) TimerEvent: {}
+[11.144015] (-) TimerEvent: {}
+[11.244586] (-) TimerEvent: {}
+[11.345566] (-) TimerEvent: {}
+[11.445999] (-) TimerEvent: {}
+[11.546525] (-) TimerEvent: {}
+[11.646997] (-) TimerEvent: {}
+[11.747438] (-) TimerEvent: {}
+[11.851261] (-) TimerEvent: {}
+[11.952210] (-) TimerEvent: {}
+[12.052742] (-) TimerEvent: {}
+[12.153293] (-) TimerEvent: {}
+[12.254524] (-) TimerEvent: {}
+[12.355302] (-) TimerEvent: {}
+[12.459336] (-) TimerEvent: {}
+[12.564749] (-) TimerEvent: {}
+[12.665321] (-) TimerEvent: {}
+[12.765830] (-) TimerEvent: {}
+[12.866330] (-) TimerEvent: {}
+[12.967421] (-) TimerEvent: {}
+[13.067965] (-) TimerEvent: {}
+[13.168497] (-) TimerEvent: {}
+[13.260141] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[13.262609] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2\n'}
+[13.262825] (cpp_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[13.266690] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[13.274344] (-) TimerEvent: {}
+[13.363003] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[13.367754] (-) EventReactorShutdown: {}

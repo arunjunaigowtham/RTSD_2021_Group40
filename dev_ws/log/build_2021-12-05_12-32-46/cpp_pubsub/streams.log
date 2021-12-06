@@ -1,0 +1,10 @@
+[0.054s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.208s] [35m[1mScanning dependencies of target listener[0m
+[0.285s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[7.015s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[7.015s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:144:22:[m[K [01;31m[Kerror: [m[Kassignment of read-only location ‘[01m[K((const std::__shared_ptr_access<const sensor_msgs::msg::Image_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<const sensor_msgs::msg::Image_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->sensor_msgs::msg::Image_<std::allocator<void> >::data.std::vector<unsigned char, std::allocator<unsigned char> >::operator[](((std::vector<unsigned char, std::allocator<unsigned char> >::size_type)i))[m[K’
+[7.015s]   144 |         msg->data[i] = 0;
+[12.616s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[12.618s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[12.618s] make: *** [Makefile:141: all] Error 2
+[12.635s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

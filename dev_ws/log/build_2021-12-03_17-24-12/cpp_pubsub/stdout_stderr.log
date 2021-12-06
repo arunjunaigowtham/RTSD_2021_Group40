@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

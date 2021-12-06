@@ -1,0 +1,54 @@
+[35m[1mScanning dependencies of target parameter_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o[0m
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:34:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+   34 |       rclcpp::Publisher<[01;31m[Kstd_msgs[m[K::msg::String>::SharedPtr publisher_;
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:34:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |       rclcpp::Publisher<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:34:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   34 |       rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:34:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+   34 |       rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~[m[K
+      |                                                           [32m[Krcl_publisher_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:[m[K In constructor ‘[01m[KParametersClass::ParametersClass()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:15:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+   15 |       [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("topicParameter", 10);
+      |       [01;31m[K^~~~~~~~~~[m[K
+      |       [32m[Krcl_publisher_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:15:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+   15 |       publisher_ = this->create_publisher<[01;31m[Kstd_msgs[m[K::msg::String>("topicParameter", 10);
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:15:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   15 |       publisher_ = this->[01;31m[Kcreate_publisher<std_msgs::msg::String>[m[K("topicParameter", 10);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:15:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KParametersClass::create_publisher<<expression error> >(const char [15], int)[m[K’
+   15 | >create_publisher<std_msgs::msg::String>("topicParameter", 10[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:189:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  189 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:189:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:15:86:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 | >create_publisher<std_msgs::msg::String>("topicParameter", 10[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:[m[K In member function ‘[01m[Kvoid ParametersClass::respond()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:25:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ has not been declared
+   25 |       auto message = [01;31m[Kstd_msgs[m[K::msg::String();
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_parameters/src/cpp_parameters_node.cpp:28:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+   28 |       [01;31m[Kpublisher_[m[K->publish(message);
+      |       [01;31m[K^~~~~~~~~~[m[K
+      |       [32m[Krcl_publisher_t[m[K
+make[2]: *** [CMakeFiles/parameter_node.dir/build.make:63: CMakeFiles/parameter_node.dir/src/cpp_parameters_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/parameter_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,24 @@
+[0.045s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.144s] [35m[1mScanning dependencies of target listener[0m
+[0.203s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[5.209s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[5.209s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:49:3:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst int[m[K’ [[01;31m[K-fpermissive[m[K]
+[5.209s]    49 |   [01;31m[KMinimalSubscriber[m[K()
+[5.209s]       |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.210s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:225:13:[m[K [01;36m[Knote: [m[K‘[01m[Kconst int MinimalSubscriber::darknessThreshold_[m[K’ should be initialized
+[5.210s]   225 |   const int [01;36m[KdarknessThreshold_[m[K;
+[5.210s]       |             [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.528s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:1315[m[K,
+[5.528s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.528s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.528s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.529s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[5.529s] /opt/ros/galactic/include/rclcpp/node_impl.hpp: In instantiation of ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = const int; std::string = std::__cxx11::basic_string<char>][m[K’:
+[5.529s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:176:56:[m[K   required from here
+[5.529s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:15:[m[K [01;31m[Kerror: [m[Kassignment of read-only reference ‘[01m[Kparameter[m[K’
+[5.530s]   291 |     [01;31m[Kparameter = static_cast<ParameterT>(parameter_variant.get_value<ParameterT>())[m[K;
+[5.530s]       |     [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.880s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[9.883s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[9.883s] make: *** [Makefile:141: all] Error 2
+[9.889s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

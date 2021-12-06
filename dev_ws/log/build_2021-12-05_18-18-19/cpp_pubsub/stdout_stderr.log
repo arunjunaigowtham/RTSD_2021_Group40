@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target light_indicator[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o[0m
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:20[m[K:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:148:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+  148 |     RCLCPP_INFO(this->get_logger(), "Publishing:  '%s'", [01;31m[Kmessage[m[K.data.c_str());
+      |                                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:160:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+  160 |     light_publisher_->publish([01;31m[Kmessage[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/light_indicator.dir/build.make:63: CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/light_indicator.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

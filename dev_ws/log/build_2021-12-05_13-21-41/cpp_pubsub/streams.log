@@ -1,0 +1,31 @@
+[0.039s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.161s] [35m[1mScanning dependencies of target listener[0m
+[0.231s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[5.723s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[5.724s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:165:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KcvtColor(cv_bridge::CvImagePtr&, cv_bridge::CvImagePtr&, cv::ColorConversionCodes)[m[K’
+[5.724s]   165 |     cvtColor(cv_ptr, cv_ptr, cv::COLOR_BGR2GRAY[01;31m[K)[m[K;
+[5.724s]       |                                                [01;31m[K^[m[K
+[5.725s] In file included from [01m[K/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:48[m[K,
+[5.725s]                  from [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:44[m[K,
+[5.725s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.726s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:3542:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::cvtColor(cv::InputArray, cv::OutputArray, int, int)[m[K’
+[5.726s]  3542 | CV_EXPORTS_W void [01;36m[KcvtColor[m[K( InputArray src, OutputArray dst, int code, int dstCn = 0 );
+[5.726s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.726s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:3542:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv_bridge::CvImagePtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<cv_bridge::CvImage>[m[K’} to ‘[01m[Kcv::InputArray[m[K’ {aka ‘[01m[Kconst cv::_InputArray&[m[K’}
+[5.726s]  3542 | CV_EXPORTS_W void cvtColor( [01;36m[KInputArray src[m[K, OutputArray dst, int code, int dstCn = 0 );
+[5.727s]       |                             [01;36m[K~~~~~~~~~~~^~~[m[K
+[5.727s] In file included from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:27[m[K:
+[5.727s] [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:266:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImagePtr cv_bridge::cvtColor(const CvImageConstPtr&, const string&)[m[K’
+[5.727s]   266 | CV_BRIDGE_EXPORT CvImagePtr [01;36m[KcvtColor[m[K(
+[5.728s]       |                             [01;36m[K^~~~~~~~[m[K
+[5.728s] [01m[K/opt/ros/galactic/include/cv_bridge/cv_bridge.h:266:29:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[5.733s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:145:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krows[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.734s]   145 |     int [01;35m[Krows[m[K = msg->height;
+[5.734s]       |         [01;35m[K^~~~[m[K
+[5.734s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:146:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcolumns[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.734s]   146 |     int [01;35m[Kcolumns[m[K = msg->width;
+[5.735s]       |         [01;35m[K^~~~~~~[m[K
+[10.170s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[10.172s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[10.172s] make: *** [Makefile:141: all] Error 2
+[10.177s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

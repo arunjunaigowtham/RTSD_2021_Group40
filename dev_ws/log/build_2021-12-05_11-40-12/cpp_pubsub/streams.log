@@ -1,0 +1,31 @@
+[0.055s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.195s] [35m[1mScanning dependencies of target listener[0m
+[0.276s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[6.457s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[6.457s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription(const char [6], rclcpp::QoS&, std::_Bind_helper<false, void (MinimalSubscriber::*)(std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >) const, MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[6.458s]    77 |  qos, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K;
+[6.458s]       |                                                              [01;31m[K^[m[K
+[6.458s] 
+[6.458s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.459s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[6.459s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[6.459s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[6.459s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[6.460s]   218 |   [01;36m[Kcreate_subscription[m[K(
+[6.460s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.467s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.467s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:78:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KMessageT[m[K’
+[6.467s]    77 |  qos, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;36m[K)[m[K;
+[6.468s]       |                                                              [01;36m[K^[m[K
+[6.470s] 
+[7.056s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[7.056s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:140:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krows[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[7.056s]   140 |     int [01;35m[Krows[m[K = msg->height;
+[7.057s]       |         [01;35m[K^~~~[m[K
+[7.057s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:141:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcolumns[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[7.057s]   141 |     int [01;35m[Kcolumns[m[K = msg->width;
+[7.058s]       |         [01;35m[K^~~~~~~[m[K
+[8.516s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[8.519s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[8.520s] make: *** [Makefile:141: all] Error 2
+[8.535s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

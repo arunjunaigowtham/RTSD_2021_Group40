@@ -1,0 +1,15 @@
+[0.067s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.256s] [35m[1mScanning dependencies of target light_indicator[0m
+[0.390s] [ 16%] [32mBuilding CXX object CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o[0m
+[11.608s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[11.608s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/light_position_indicator.cpp:146:67:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char*[m[K’ and ‘[01m[Kconst char [3][m[K’ to binary ‘[01m[Koperator+[m[K’
+[11.608s]   146 |    message.data = [32m[K"Center of Gravity coordinates: = [" + p.x[m[K [01;31m[K+[m[K [34m[K", "[m[K + p.y + "]";
+[11.608s]       |                   [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~[m[K
+[11.609s]       |                                                        [32m[K|[m[K       [34m[K|[m[K
+[11.609s]       |                                                        [32m[K|[m[K       [34m[Kconst char [3][m[K
+[11.609s]       |                                                        [32m[Kconst char*[m[K
+[11.609s] 
+[21.530s] make[2]: *** [CMakeFiles/light_indicator.dir/build.make:63: CMakeFiles/light_indicator.dir/src/light_position_indicator.cpp.o] Error 1
+[21.534s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/light_indicator.dir/all] Error 2
+[21.534s] make: *** [Makefile:141: all] Error 2
+[21.549s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

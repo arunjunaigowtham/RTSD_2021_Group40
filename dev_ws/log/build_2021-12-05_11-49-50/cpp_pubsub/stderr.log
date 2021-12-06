@@ -1,0 +1,49 @@
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:129:47:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs::msg[m[K’ does not name a type
+  129 |   void topic_callback(const sensor_msgs::msg::[01;31m[KImageConstPtr[m[K& msg_ptr) const
+      |                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:149:42:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+  149 |   rclcpp::Subscription<sensor_msgs::msg::[01;31m[KImageConstPtr[m[K>::SharedPtr subscription_;
+      |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:149:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  149 |   rclcpp::Subscription<sensor_msgs::msg::ImageConstPtr[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:149:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:149:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  149 |   rclcpp::Subscription<sensor_msgs::msg::ImageConstPtr>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:149:68:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+  149 | rclcpp::Subscription<sensor_msgs::msg::ImageConstPtr>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                  [32m[Krcl_subscription_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   76 |     [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::ImageConstPtr>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krcl_subscription_t[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:76:65:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   76 |     subscription_ = this->create_subscription<sensor_msgs::msg::[01;31m[KImageConstPtr[m[K>(
+      |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<<expression error> >(const char [6], rclcpp::QoS&, std::_Bind_helper<false, void (MinimalSubscriber::*)(const int&) const, MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+   77 |  qos, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  218 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:218:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  qos, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(const int&) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:129:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  129 |   void topic_callback([01;35m[Kconst sensor_msgs::msg::ImageConstPtr& msg_ptr[m[K) const
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

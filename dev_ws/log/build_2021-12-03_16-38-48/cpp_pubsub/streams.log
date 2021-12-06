@@ -1,0 +1,36 @@
+[0.023s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.110s] [35m[1mScanning dependencies of target listener[0m
+[0.159s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.390s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:50:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+[0.391s]    50 | }
+[0.391s]       | 
+[3.279s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.279s]    39 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Image received.";
+[3.280s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[3.280s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:26:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.280s]    26 | [01;36m[K{[m[K
+[3.280s]       | [01;36m[K^[m[K
+[3.285s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[3.286s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+[3.286s]    31 |     [01;31m[Ksubscription_[m[K = this->create_subscription<std_msgs::msg::String>(
+[3.286s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.286s]       |     [32m[Krcl_subscription_t[m[K
+[3.326s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[3.326s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[3.327s]    39 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Image received.";
+[3.327s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[3.327s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.327s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:37:3:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.327s]    37 |   [01;36m[K{[m[K
+[3.328s]       |   [01;36m[K^[m[K
+[3.328s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:36:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.328s]    36 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+[3.328s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.329s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K At global scope:
+[3.329s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[3.329s]    39 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Image received.";
+[3.329s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[6.243s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[6.246s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[6.246s] make: *** [Makefile:141: all] Error 2
+[6.252s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

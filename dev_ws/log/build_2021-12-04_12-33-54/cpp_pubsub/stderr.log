@@ -1,0 +1,13 @@
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:67:75:[m[K [01;31m[Kerror: [m[K‘[01m[K_0[m[K’ was not declared in this scope; did you mean ‘[01m[Ky0[m[K’?
+   67 | e", qos, std::bind(&MinimalSubscriber::topic_callback, this, [01;31m[K_0[m[K));
+      |                                                              [01;31m[K^~[m[K
+      |                                                              [32m[Ky0[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::parse_parameters()[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:109:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khistory_polict_[m[K’ was not declared in this scope; did you mean ‘[01m[Khistory_policy_[m[K’?
+  109 |     [01;31m[Khistory_polict_[m[K = RMW_QOS_POLICY_HISTORY_KEEP_LAST;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Khistory_policy_[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,58 @@
+[0.052s] Invoking command in '/home/rtsd-user/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/my_package
+[0.231s] -- The C compiler identification is GNU 9.3.0
+[0.414s] -- The CXX compiler identification is GNU 9.3.0
+[0.428s] -- Check for working C compiler: /usr/bin/cc
+[0.566s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.568s] -- Detecting C compiler ABI info
+[0.714s] -- Detecting C compiler ABI info - done
+[0.764s] -- Detecting C compile features
+[0.766s] -- Detecting C compile features - done
+[0.776s] -- Check for working CXX compiler: /usr/bin/c++
+[0.971s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.977s] -- Detecting CXX compiler ABI info
+[1.175s] -- Detecting CXX compiler ABI info - done
+[1.220s] -- Detecting CXX compile features
+[1.222s] -- Detecting CXX compile features - done
+[1.230s] -- Found ament_cmake: 1.1.4 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.317s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.317s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.527s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.718s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.721s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.722s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rtsd-user/dev_ws/src/my_package/include>
+[1.722s] -- Configured cppcheck exclude dirs and/or files: 
+[1.725s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.726s] -- Configured cpplint exclude dirs and/or files: 
+[1.729s] -- Added test 'lint_cmake' to check CMake code style
+[1.737s] -- Added test 'uncrustify' to check C / C++ code style
+[1.739s] -- Configured uncrustify additional arguments: 
+[1.743s] -- Added test 'xmllint' to check XML markup files
+[1.747s] -- Configuring done
+[1.762s] -- Generating done
+[1.766s] -- Build files have been written to: /home/rtsd-user/dev_ws/build/my_package
+[1.777s] Invoked command in '/home/rtsd-user/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/rtsd-user/dev_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/rtsd-user/dev_ws/install/my_package
+[1.780s] Invoking command in '/home/rtsd-user/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/my_package -- -j1 -l1
+[1.867s] [35m[1mScanning dependencies of target my_node[0m
+[1.891s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[1.969s] [100%] [32m[1mLinking CXX executable my_node[0m
+[2.073s] [100%] Built target my_node
+[2.094s] Invoked command in '/home/rtsd-user/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/my_package -- -j1 -l1
+[2.160s] Invoking command in '/home/rtsd-user/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/my_package
+[2.182s] -- Install configuration: ""
+[2.183s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/lib/my_package/my_node
+[2.183s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[2.184s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[2.185s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[2.186s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[2.186s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/environment/path.sh
+[2.187s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/environment/path.dsv
+[2.188s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/local_setup.bash
+[2.188s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/local_setup.sh
+[2.189s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/local_setup.zsh
+[2.190s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/local_setup.dsv
+[2.190s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/package.dsv
+[2.191s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[2.192s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[2.192s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[2.193s] -- Installing: /home/rtsd-user/dev_ws/install/my_package/share/my_package/package.xml
+[2.199s] Invoked command in '/home/rtsd-user/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/rtsd-user/dev_ws/build/my_package

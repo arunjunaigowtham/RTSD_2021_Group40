@@ -1,0 +1,39 @@
+[0.045s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.122s] -- Found ament_cmake: 1.1.4 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.167s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.326s] -- Found rclcpp: 9.1.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.436s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.444s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.719s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.891s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.897s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.959s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.443s] -- Found sensor_msgs: 2.2.3 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.799s] -- Found cv_bridge: 2.2.1 (/opt/ros/galactic/share/cv_bridge/cmake)
+[1.851s] -- Found image_transport: 2.3.0 (/opt/ros/galactic/share/image_transport/cmake)
+[2.115s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[2.310s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.330s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.332s] -- Configured cppcheck include dirs: 
+[2.332s] -- Configured cppcheck exclude dirs and/or files: 
+[2.338s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.338s] -- Configured cpplint exclude dirs and/or files: 
+[2.340s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.343s] -- Added test 'lint_cmake' to check CMake code style
+[2.345s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.351s] -- Added test 'uncrustify' to check C / C++ code style
+[2.351s] -- Configured uncrustify additional arguments: 
+[2.353s] -- Added test 'xmllint' to check XML markup files
+[2.362s] -- Configuring done
+[2.449s] -- Generating done
+[2.455s] -- Build files have been written to: /home/rtsd-user/dev_ws/build/cpp_pubsub
+[2.497s] [35m[1mScanning dependencies of target listener[0m
+[2.740s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[3.106s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:28:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/image_encodings.h: No such file or directory
+[3.106s]    28 | #include [01;31m[K<sensor_msgs/image_encodings.h>[m[K
+[3.106s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.106s] compilation terminated.
+[3.110s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[3.114s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[3.119s] make: *** [Makefile:141: all] Error 2
+[3.120s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

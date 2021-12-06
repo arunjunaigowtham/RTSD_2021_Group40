@@ -1,0 +1,173 @@
+[0.000000] (-) TimerEvent: {}
+[0.002390] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.002522] (-) JobUnselected: {'identifier': 'my_package'}
+[0.002605] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.002691] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.002777] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.075196] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.079548] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.082718] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtsd-user/dev_ws/build/cpp_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/rtsd-user/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtsd-user'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1176'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/rtsd-user'), ('OLDPWD', '/home/rtsd-user/dev_ws/src/cpp_pubsub/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '952'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'rtsd-user'), ('JOURNAL_STREAM', '8:30583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtsd-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtsd-vm:@/tmp/.ICE-unix/1227,unix/rtsd-vm:/tmp/.ICE-unix/1227'), ('INVOCATION_ID', 'd594878c5c95416db09fd8bf7e53ea2f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a7c96540_2db1_452f_b88e_829f7e071ea8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtsd-user/dev_ws/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.097544] (-) TimerEvent: {}
+[0.199168] (-) TimerEvent: {}
+[0.299916] (-) TimerEvent: {}
+[0.401393] (-) TimerEvent: {}
+[0.502266] (-) TimerEvent: {}
+[0.507471] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.602467] (-) TimerEvent: {}
+[0.628899] (cpp_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.702931] (-) TimerEvent: {}
+[0.803890] (-) TimerEvent: {}
+[0.905364] (-) TimerEvent: {}
+[1.006199] (-) TimerEvent: {}
+[1.109822] (-) TimerEvent: {}
+[1.210909] (-) TimerEvent: {}
+[1.311640] (-) TimerEvent: {}
+[1.412641] (-) TimerEvent: {}
+[1.513633] (-) TimerEvent: {}
+[1.614636] (-) TimerEvent: {}
+[1.715469] (-) TimerEvent: {}
+[1.816585] (-) TimerEvent: {}
+[1.917724] (-) TimerEvent: {}
+[2.018619] (-) TimerEvent: {}
+[2.119548] (-) TimerEvent: {}
+[2.220415] (-) TimerEvent: {}
+[2.321609] (-) TimerEvent: {}
+[2.423122] (-) TimerEvent: {}
+[2.525744] (-) TimerEvent: {}
+[2.626279] (-) TimerEvent: {}
+[2.727187] (-) TimerEvent: {}
+[2.828585] (-) TimerEvent: {}
+[2.929621] (-) TimerEvent: {}
+[3.030324] (-) TimerEvent: {}
+[3.131098] (-) TimerEvent: {}
+[3.238288] (-) TimerEvent: {}
+[3.339102] (-) TimerEvent: {}
+[3.440227] (-) TimerEvent: {}
+[3.541784] (-) TimerEvent: {}
+[3.642573] (-) TimerEvent: {}
+[3.743787] (-) TimerEvent: {}
+[3.844567] (-) TimerEvent: {}
+[3.945269] (-) TimerEvent: {}
+[4.045995] (-) TimerEvent: {}
+[4.146543] (-) TimerEvent: {}
+[4.252370] (-) TimerEvent: {}
+[4.353741] (-) TimerEvent: {}
+[4.454507] (-) TimerEvent: {}
+[4.555040] (-) TimerEvent: {}
+[4.656234] (-) TimerEvent: {}
+[4.757205] (-) TimerEvent: {}
+[4.863738] (-) TimerEvent: {}
+[4.964534] (-) TimerEvent: {}
+[5.065367] (-) TimerEvent: {}
+[5.171075] (-) TimerEvent: {}
+[5.271905] (-) TimerEvent: {}
+[5.373471] (-) TimerEvent: {}
+[5.477981] (-) TimerEvent: {}
+[5.579110] (-) TimerEvent: {}
+[5.679869] (-) TimerEvent: {}
+[5.780733] (-) TimerEvent: {}
+[5.881346] (-) TimerEvent: {}
+[5.981995] (-) TimerEvent: {}
+[6.082619] (-) TimerEvent: {}
+[6.183846] (-) TimerEvent: {}
+[6.284961] (-) TimerEvent: {}
+[6.386493] (-) TimerEvent: {}
+[6.487598] (-) TimerEvent: {}
+[6.588447] (-) TimerEvent: {}
+[6.689485] (-) TimerEvent: {}
+[6.790382] (-) TimerEvent: {}
+[6.893360] (-) TimerEvent: {}
+[6.994473] (-) TimerEvent: {}
+[7.100989] (-) TimerEvent: {}
+[7.202489] (-) TimerEvent: {}
+[7.303080] (-) TimerEvent: {}
+[7.406620] (-) TimerEvent: {}
+[7.508125] (-) TimerEvent: {}
+[7.608903] (-) TimerEvent: {}
+[7.710769] (-) TimerEvent: {}
+[7.812215] (-) TimerEvent: {}
+[7.913725] (-) TimerEvent: {}
+[8.014248] (-) TimerEvent: {}
+[8.114773] (-) TimerEvent: {}
+[8.215261] (-) TimerEvent: {}
+[8.316336] (-) TimerEvent: {}
+[8.417872] (-) TimerEvent: {}
+[8.518521] (-) TimerEvent: {}
+[8.619086] (-) TimerEvent: {}
+[8.690460] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::MinimalSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.690932] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:54:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khistory_policy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.691327] (cpp_pubsub) StderrLine: {'line': b'   54 |         \x1b[01;31m\x1b[Khistory_policy_\x1b[m\x1b[K,\n'}
+[8.691631] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.696331] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdepth_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.696824] (cpp_pubsub) StderrLine: {'line': b'   57 |         \x1b[01;31m\x1b[Kdepth_\x1b[m\x1b[K\n'}
+[8.697185] (cpp_pubsub) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.707480] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:59:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreliability_policy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.708254] (cpp_pubsub) StderrLine: {'line': b'   59 |     qos.reliability(\x1b[01;31m\x1b[Kreliability_policy_\x1b[m\x1b[K);\n'}
+[8.708877] (cpp_pubsub) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.709405] (cpp_pubsub) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\n'}
+[8.719331] (-) TimerEvent: {}
+[8.820476] (-) TimerEvent: {}
+[8.921067] (-) TimerEvent: {}
+[9.021626] (-) TimerEvent: {}
+[9.122167] (-) TimerEvent: {}
+[9.130614] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::parse_parameters()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.130978] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:75:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kname_to_reliability_policy_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.131284] (cpp_pubsub) StderrLine: {'line': b'   75 |     for (auto entry : \x1b[01;31m\x1b[Kname_to_reliability_policy_map\x1b[m\x1b[K) {\n'}
+[9.131550] (cpp_pubsub) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.131787] (cpp_pubsub) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\n'}
+[9.154536] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:80:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kname_to_reliability_policy_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.154894] (cpp_pubsub) StderrLine: {'line': b'   80 |     auto reliability = \x1b[01;31m\x1b[Kname_to_reliability_policy_map\x1b[m\x1b[K.find(reliability_param);\n'}
+[9.155154] (cpp_pubsub) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.159219] (cpp_pubsub) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Krmw_qos_reliability_policy_t\x1b[m\x1b[K\n'}
+[9.169160] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:86:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreliability_policy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kreliability_param\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.169660] (cpp_pubsub) StderrLine: {'line': b'   86 |     \x1b[01;31m\x1b[Kreliability_policy_\x1b[m\x1b[K = reliability->second;\n'}
+[9.170092] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.170454] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kreliability_param\x1b[m\x1b[K\n'}
+[9.184122] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:92:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kname_to_history_policy_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_history_policy_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.184628] (cpp_pubsub) StderrLine: {'line': b'   92 |     for (auto entry : \x1b[01;31m\x1b[Kname_to_history_policy_map\x1b[m\x1b[K) {\n'}
+[9.185081] (cpp_pubsub) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.185443] (cpp_pubsub) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Krmw_qos_history_policy_t\x1b[m\x1b[K\n'}
+[9.196488] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:96:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kname_to_history_policy_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_qos_history_policy_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.197111] (cpp_pubsub) StderrLine: {'line': b'   96 |       "history", \x1b[01;31m\x1b[Kname_to_history_policy_map\x1b[m\x1b[K.begin()->first, history_desc);\n'}
+[9.197467] (cpp_pubsub) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.197766] (cpp_pubsub) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Krmw_qos_history_policy_t\x1b[m\x1b[K\n'}
+[9.206025] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:103:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khistory_policy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.206293] (cpp_pubsub) StderrLine: {'line': b'  103 |     \x1b[01;31m\x1b[Khistory_policy_\x1b[m\x1b[K = history->second;\n'}
+[9.206491] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.211385] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:106:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdepth_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.211890] (cpp_pubsub) StderrLine: {'line': b'  106 |     \x1b[01;31m\x1b[Kdepth_\x1b[m\x1b[K = this->declare_parameter("depth", 10);\n'}
+[9.212214] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.222164] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:107:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kshow_image_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.222671] (-) TimerEvent: {}
+[9.223154] (cpp_pubsub) StderrLine: {'line': b'  107 |     \x1b[01;31m\x1b[Kshow_image_\x1b[m\x1b[K = this->declare_parameter("show_image", true);\n'}
+[9.223656] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.230135] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:108:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwindow_name_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.230502] (cpp_pubsub) StderrLine: {'line': b'  108 |     \x1b[01;31m\x1b[Kwindow_name_\x1b[m\x1b[K = this->declare_parameter("window_name", "");\n'}
+[9.230767] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.269963] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.270301] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:112:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[9.270530] (cpp_pubsub) StderrLine: {'line': b'  112 |   void topic_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::String::ConstSharedPtr msg\x1b[m\x1b[K) const\n'}
+[9.270747] (cpp_pubsub) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[9.322882] (-) TimerEvent: {}
+[9.423669] (-) TimerEvent: {}
+[9.524572] (-) TimerEvent: {}
+[9.625592] (-) TimerEvent: {}
+[9.726360] (-) TimerEvent: {}
+[9.827285] (-) TimerEvent: {}
+[9.928657] (-) TimerEvent: {}
+[10.029598] (-) TimerEvent: {}
+[10.130382] (-) TimerEvent: {}
+[10.231145] (-) TimerEvent: {}
+[10.333305] (-) TimerEvent: {}
+[10.434063] (-) TimerEvent: {}
+[10.534762] (-) TimerEvent: {}
+[10.635585] (-) TimerEvent: {}
+[10.736395] (-) TimerEvent: {}
+[10.823966] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[10.827507] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2\n'}
+[10.827771] (cpp_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[10.830492] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[10.836769] (-) TimerEvent: {}
+[10.937272] (-) TimerEvent: {}
+[10.945200] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[10.952177] (-) EventReactorShutdown: {}

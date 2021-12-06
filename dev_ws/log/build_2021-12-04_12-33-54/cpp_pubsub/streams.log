@@ -1,0 +1,17 @@
+[0.065s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.919s] [35m[1mScanning dependencies of target listener[0m
+[1.622s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[45.759s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[45.760s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:67:75:[m[K [01;31m[Kerror: [m[K‘[01m[K_0[m[K’ was not declared in this scope; did you mean ‘[01m[Ky0[m[K’?
+[45.761s]    67 | e", qos, std::bind(&MinimalSubscriber::topic_callback, this, [01;31m[K_0[m[K));
+[45.761s]       |                                                              [01;31m[K^~[m[K
+[45.762s]       |                                                              [32m[Ky0[m[K
+[47.626s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::parse_parameters()[m[K’:
+[47.627s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:109:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khistory_polict_[m[K’ was not declared in this scope; did you mean ‘[01m[Khistory_policy_[m[K’?
+[47.627s]   109 |     [01;31m[Khistory_polict_[m[K = RMW_QOS_POLICY_HISTORY_KEEP_LAST;
+[47.666s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[47.666s]       |     [32m[Khistory_policy_[m[K
+[53.295s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[53.323s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[53.325s] make: *** [Makefile:141: all] Error 2
+[53.374s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

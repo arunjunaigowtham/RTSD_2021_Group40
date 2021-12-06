@@ -1,0 +1,10 @@
+CMake Error at CMakeLists.txt:16:
+  Parse error.  Expected "(", got newline with text "
+
+  ".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/rtsd-user/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeOutput.log".
+See also "/home/rtsd-user/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeError.log".
+make: *** [Makefile:310: cmake_check_build_system] Error 1

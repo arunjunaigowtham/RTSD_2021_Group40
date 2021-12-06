@@ -1,0 +1,55 @@
+[0.082s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.505s] [35m[1mScanning dependencies of target listener[0m
+[0.626s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[8.688s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[8.688s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khistory_policy_[m[K’ was not declared in this scope
+[8.689s]    54 |         [01;31m[Khistory_policy_[m[K,
+[8.689s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[8.694s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdepth_[m[K’ was not declared in this scope
+[8.694s]    57 |         [01;31m[Kdepth_[m[K
+[8.695s]       |         [01;31m[K^~~~~~[m[K
+[8.705s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:59:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kreliability_policy_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_reliability_policy_t[m[K’?
+[8.706s]    59 |     qos.reliability([01;31m[Kreliability_policy_[m[K);
+[8.706s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.707s]       |                     [32m[Krmw_qos_reliability_policy_t[m[K
+[9.128s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::parse_parameters()[m[K’:
+[9.128s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:75:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_reliability_policy_t[m[K’?
+[9.129s]    75 |     for (auto entry : [01;31m[Kname_to_reliability_policy_map[m[K) {
+[9.129s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.129s]       |                       [32m[Krmw_qos_reliability_policy_t[m[K
+[9.152s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:80:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_reliability_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_reliability_policy_t[m[K’?
+[9.152s]    80 |     auto reliability = [01;31m[Kname_to_reliability_policy_map[m[K.find(reliability_param);
+[9.153s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.157s]       |                        [32m[Krmw_qos_reliability_policy_t[m[K
+[9.167s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreliability_policy_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreliability_param[m[K’?
+[9.167s]    86 |     [01;31m[Kreliability_policy_[m[K = reliability->second;
+[9.167s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.168s]       |     [32m[Kreliability_param[m[K
+[9.182s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:92:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_history_policy_t[m[K’?
+[9.182s]    92 |     for (auto entry : [01;31m[Kname_to_history_policy_map[m[K) {
+[9.182s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.183s]       |                       [32m[Krmw_qos_history_policy_t[m[K
+[9.194s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:96:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_to_history_policy_map[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_qos_history_policy_t[m[K’?
+[9.194s]    96 |       "history", [01;31m[Kname_to_history_policy_map[m[K.begin()->first, history_desc);
+[9.195s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.195s]       |                  [32m[Krmw_qos_history_policy_t[m[K
+[9.203s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:103:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khistory_policy_[m[K’ was not declared in this scope
+[9.204s]   103 |     [01;31m[Khistory_policy_[m[K = history->second;
+[9.204s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.209s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:106:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdepth_[m[K’ was not declared in this scope
+[9.209s]   106 |     [01;31m[Kdepth_[m[K = this->declare_parameter("depth", 10);
+[9.210s]       |     [01;31m[K^~~~~~[m[K
+[9.220s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:107:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kshow_image_[m[K’ was not declared in this scope
+[9.221s]   107 |     [01;31m[Kshow_image_[m[K = this->declare_parameter("show_image", true);
+[9.221s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[9.228s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:108:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow_name_[m[K’ was not declared in this scope
+[9.228s]   108 |     [01;31m[Kwindow_name_[m[K = this->declare_parameter("window_name", "");
+[9.228s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[9.267s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[9.268s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:112:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.268s]   112 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::ConstSharedPtr msg[m[K) const
+[9.268s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.821s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[10.825s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[10.825s] make: *** [Makefile:141: all] Error 2
+[10.829s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

@@ -1,0 +1,47 @@
+[0.054s] Invoking command in '/home/rtsd-user/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1
+[0.160s] [35m[1mScanning dependencies of target listener[0m
+[0.248s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[6.289s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[6.290s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::declare_parameter(const char [10], double) const[m[K’
+[6.290s]   172 |     darknessThreshold_ = this->declare_parameter("threshold", 40.0[01;31m[K)[m[K;
+[6.290s]       |                                                                   [01;31m[K^[m[K
+[6.290s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:1315[m[K,
+[6.291s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.291s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[6.296s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[6.297s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[6.297s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’ <near match>
+[6.297s]   196 | [01;36m[KNode[m[K::declare_parameter(
+[6.298s]       | [01;36m[K^~~~[m[K
+[6.299s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:196:1:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst MinimalSubscriber*[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[6.299s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.299s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[6.299s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[6.300s]                  from [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:20[m[K:
+[6.300s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:365:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[6.300s]   365 |   [01;36m[Kdeclare_parameter[m[K(
+[6.300s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[6.301s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:367:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+[6.301s]   367 |     [01;36m[Kconst rclcpp::ParameterValue & default_value[m[K,
+[6.301s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.304s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:390:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[6.304s]   390 |   [01;36m[Kdeclare_parameter[m[K(
+[6.304s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[6.304s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:392:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kdouble[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+[6.305s]   392 |     [01;36m[Krclcpp::ParameterType type[m[K,
+[6.305s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[6.305s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:411:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’
+[6.305s]   411 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[6.305s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[6.312s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:411:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[6.316s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[6.316s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[6.316s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[6.317s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.317s] [01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:172:67:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[6.317s]   172 |     darknessThreshold_ = this->declare_parameter("threshold", 40.0[01;36m[K)[m[K;
+[6.317s]       |                                                                   [01;36m[K^[m[K
+[12.213s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[12.216s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+[12.216s] make: *** [Makefile:141: all] Error 2
+[12.225s] Invoked command in '/home/rtsd-user/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/rtsd-user/dev_ws/build/cpp_pubsub -- -j1 -l1

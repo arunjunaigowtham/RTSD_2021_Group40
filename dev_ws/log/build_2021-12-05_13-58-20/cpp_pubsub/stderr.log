@@ -1,0 +1,14 @@
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr) const[m[K’:
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:173:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcv[m[K’
+  173 |     [01;31m[Kcv[m[K::Mat greyMat;
+      |     [01;31m[K^~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:174:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgreyMat[m[K’ was not declared in this scope
+  174 |     cv::cvtColor(cvImg, [01;31m[KgreyMat[m[K, CV_BGR2GRAY);
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/rtsd-user/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:175:27:[m[K [01;31m[Kerror: [m[K‘[01m[KcvImgOut[m[K’ was not declared in this scope; did you mean ‘[01m[KcvImg[m[K’?
+  175 |     cv::cvtColor(greyMat, [01;31m[KcvImgOut[m[K, CV_BGR2GRAY);
+      |                           [01;31m[K^~~~~~~~[m[K
+      |                           [32m[KcvImg[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
